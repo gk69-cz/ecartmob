@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 class Home extends StatelessWidget {
   Home({super.key});
 
-  final TextEditingController _searchController = TextEditingController();
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -13,47 +11,6 @@ class Home extends StatelessWidget {
        body: ListView(children: [
           Column(
           children: [
-            
-            Padding(
-              padding: const EdgeInsets.only(top: 20, left: 20),
-              child: Row(
-                children: [
-                  SizedBox(
-                    height: 50,
-                    width: 280,
-                    child: TextField(
-                    
-                      controller: _searchController,
-                      decoration: InputDecoration(
-                          prefixIcon: const Icon(Icons.search),
-                          hintText: 'Search..',
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                          )),
-                    ),
-                  ),
-                  const SizedBox(
-                    width: 10,
-                  ),
-                  Badge(
-                    label: const Text('1'),
-                    child: Icon(
-                      Icons.shopping_bag_outlined,
-                      size: 30,
-                      color: Colors.grey.shade500,
-                    ),
-                  ),
-                  const SizedBox(
-                    width: 10,
-                  ),
-                  Badge(
-                    label: const Text('1'),
-                    child: Icon(Icons.chat_bubble_outline_outlined,
-                        size: 30, color: Colors.grey.shade500),
-                  )
-                ],
-              ),
-            ),
             Container(
               height: 200,
               width: 380,
@@ -534,6 +491,7 @@ class Home extends StatelessWidget {
                 ],
               ),
             ),
+            
           ],
         ),
         

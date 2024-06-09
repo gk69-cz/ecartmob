@@ -1,7 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/widgets.dart';
 
 class Emptywishlist extends StatelessWidget {
   const Emptywishlist({super.key});
@@ -17,23 +14,23 @@ class Emptywishlist extends StatelessWidget {
           Container(
             height: 300,
             width: 400,
-            margin: EdgeInsets.only(top: 90),
-            decoration: BoxDecoration(
+            margin: const EdgeInsets.only(top: 90),
+            decoration: const BoxDecoration(
               image: DecorationImage(
                   fit: BoxFit.fill,
                   image: AssetImage('assets/images/wish.png')),
             ),
           ),
-          Text(
+          const Text(
             'Your Wishlist Is empty',
             textAlign: TextAlign.center,
             style: TextStyle(
                 color: Colors.black, fontSize: 20, fontWeight: FontWeight.w600),
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
-          Text(
+          const Text(
             'Explore more and shortlist some items',
             textAlign: TextAlign.center,
             style: TextStyle(

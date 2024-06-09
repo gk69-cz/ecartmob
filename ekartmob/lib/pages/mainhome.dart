@@ -1,26 +1,26 @@
 import 'package:ekartmob/screens/emptycart.dart';
 import 'package:ekartmob/screens/emptywishlist.dart';
 import 'package:ekartmob/screens/home.dart';
+import 'package:ekartmob/screens/products/products.dart';
 import 'package:ekartmob/screens/profile.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class Mainhome extends StatefulWidget {
-  Mainhome({super.key});
+  const Mainhome({super.key});
 
   @override
   State<Mainhome> createState() => _MainhomeState();
 }
 
 class _MainhomeState extends State<Mainhome> {
-  final TextEditingController _searchController = TextEditingController();
   int myIndex = 0;
   String appBar = 'EasyCart';
   List<Widget> widgetList =  [
     Home(),
-    Emptycart(),
+    ProductsPage(),
     Emptywishlist(),
     Profile(),
+    Emptycart()
   ];
   @override
   Widget build(BuildContext context) {
@@ -31,13 +31,50 @@ class _MainhomeState extends State<Mainhome> {
           centerTitle: true,
           title: Text(appBar),
           actions: [
-            IconButton(onPressed:() {
-
-            } , icon: const Icon(Icons.circle_notifications_outlined))
-          ],
+             
+                  Padding(
+                    padding: const EdgeInsets.all(0.0),
+                    child: Badge(
+                      label: const Text('1',style: TextStyle(
+                        fontSize: 10
+                      ),),
+                      child: IconButton(
+                        icon: Icon(Icons.shopping_bag_outlined,size: 30,),
+                        onPressed: () {
+                          setState(() {
+                             myIndex = 3;
+                             appBar='Cart';
+                          });
+                          
+                        },
+                        color: Colors.grey.shade900,
+                        
+                      ),
+                    ),
+                  ),
+                  
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Badge(
+                      label: const Text('1'),
+                       child: IconButton(
+                        icon: Icon(Icons.shopping_bag_outlined,size: 30,),
+                        onPressed: () {
+                          setState(() {
+                             myIndex = 2;
+                             appBar='Wishlist';
+                          });
+                          
+                        },
+                        color: Colors.grey.shade900,
+                        
+                      ),
+                    ),
+                  )
+               ],
           backgroundColor: const Color.fromARGB(112, 117, 117, 117),
           shadowColor: Colors.grey,
-          shape: RoundedRectangleBorder(
+          shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.only(
               bottomLeft: Radius.circular(15),
               bottomRight: Radius.circular(15)
@@ -52,7 +89,7 @@ class _MainhomeState extends State<Mainhome> {
                 if(index == 0){
                   appBar='EasyCart';
                 }else if (index == 1){
-                   appBar='Cart';
+                   appBar='Products';
                 }else if (index == 2){
                    appBar='Wishlist';
                 }else if (index == 3){
@@ -61,17 +98,17 @@ class _MainhomeState extends State<Mainhome> {
             });
           },
           currentIndex: myIndex,
-          items: [
+          items: const [
              BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'Home'
             ),
              BottomNavigationBarItem(
-            icon: Icon(Icons.luggage_outlined),
-            label: 'cart'
+            icon: Icon(Icons.production_quantity_limits_sharp),
+            label: 'Products'
             ),
              BottomNavigationBarItem(
-            icon: Icon(Icons.person_2_outlined),
+            icon: Icon(Icons.favorite_border_outlined),
             label: 'Wishlist'
             ),
              BottomNavigationBarItem(

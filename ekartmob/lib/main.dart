@@ -1,9 +1,11 @@
 import 'package:ekartmob/pages/mainhome.dart';
+import 'package:ekartmob/screens/emptycart.dart';
+import 'package:ekartmob/screens/emptywishlist.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 void main() {
-  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
     statusBarColor: Colors.transparent
   ));
   runApp(const MyApp());

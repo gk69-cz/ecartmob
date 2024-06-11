@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 // Function to convert string representation of icon to Icon widget
 Icon getIconFromString(String iconName) {
-  print(iconName);
   // Split the icon string to get the class and icon name
   List<String> iconParts = iconName.split('.');
   String iconClass = iconParts[0]; // Icons
@@ -24,13 +23,27 @@ Icon getIconFromString(String iconName) {
 // Helper class to get IconData from icon name
 class IconsHelper {
   static IconData? getIconData(String iconName) {
+    print(iconName);
     switch (iconName) {
-      case 'iconName':
+      case 'accessibility_new':
         return Icons.accessibility_new;
-      
+      case 'checkroom_outlined':
+        return Icons.checkroom_outlined;
+      case 'home_outlined':
+        return Icons.home_outlined;
+      case 'sports_soccer_outlined':
+        return Icons.sports_soccer_outlined;
+      case 'toys_outlined':
+        return Icons.toys_outlined;
+      case 'local_hospital_outlined':
+        return Icons.local_hospital_outlined;
+      case 'electrical_services_outlined':
+        return Icons.electrical_services_outlined;
+
+
       // Add more cases for other icons as needed
       default:
-        return Icons.accessibility_new; // Return null for unknown icons
+        return Icons.electrical_services_outlined; // Return null for unknown icons
     }
   }
 }

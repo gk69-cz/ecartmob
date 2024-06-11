@@ -1,15 +1,38 @@
+import 'package:ekartmob/components/brandBox.dart';
+import 'package:ekartmob/models/brands.dart';
 import 'package:flutter/material.dart';
 
 class Categoryscreen extends StatelessWidget {
   final String categoryName;
+  final String bannerPath;
+ 
   const Categoryscreen({
     super.key,
     required this.categoryName,
+    required this.bannerPath 
   });
 
   @override
   Widget build(BuildContext context) {
+    List<Widget> brandWidgets = brandList
+    .where((brand) {
+        var categories = brand['categories'];
+        return categories is Map && categories[categoryName] == true;
+    })
+    .map((brand) {
+        return Container(
+            padding: EdgeInsets.all(0.0),
+            child: Brandbox(
+                brandName: brand['name'].toString(), 
+                ImageUrl: brand['imageUrl'].toString(),
+            ),
+        );
+    })
+    .toList();
+
+
     return Scaffold(
+      backgroundColor: Colors.white,
         appBar: AppBar(
             toolbarHeight: 60,
             centerTitle: true,
@@ -34,10 +57,11 @@ class Categoryscreen extends StatelessWidget {
             Container(
               height: 200,
               width: 380,
-              decoration: const BoxDecoration(
+              decoration:  BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.elliptical(13, 15)),
                   image: DecorationImage(
-                      fit: BoxFit.cover,
-                      image: AssetImage('assets/images/banner.jpg'))),
+                      fit: BoxFit.fitWidth,
+                      image: AssetImage(bannerPath))),
             ),
             const Padding(
               padding: EdgeInsets.only(left: 18.0, right: 10.0,top: 20.0),
@@ -51,7 +75,7 @@ class Categoryscreen extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                         color: Colors.black),
                   ),
-                  
+                  SizedBox(height: 10,),
                   Text(
                     'See More',
                     style: TextStyle(
@@ -63,7 +87,8 @@ class Categoryscreen extends StatelessWidget {
                 
                 ],
               ),
-            ),
+              
+            ),SizedBox(height: 10,),
                Padding(
               padding: const EdgeInsets.only(top: 0.0),
               child: SingleChildScrollView(
@@ -75,189 +100,14 @@ class Categoryscreen extends StatelessWidget {
                    padding: const EdgeInsets.only(right: 18.0),
                    child: Row(
                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                     children: [
-                       Padding(
-                         padding: const EdgeInsets.only(left: 18.0),
-                         child: Column(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           crossAxisAlignment: CrossAxisAlignment.center,
-                           children: [
-                             Container(
-                               height: 40,
-                               width: 40,
-                               color: Colors.grey.shade100,
-                               child: const Icon(
-                                 Icons.dashboard_customize_outlined,
-                                 size: 30,
-                               ),
-                             ),
-                             const SizedBox(
-                               height: 6,
-                             ),
-                             const Text(
-                               'Categories',
-                               style: TextStyle(fontSize: 15),
-                             )
-                           ],
-                         ),
-                       ),
-                       Padding(
-                         padding: const EdgeInsets.only(left: 28.0),
-                         child: Column(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           crossAxisAlignment: CrossAxisAlignment.center,
-                           children: [
-                             Container(
-                               height: 40,
-                               width: 40,
-                               color: Colors.grey.shade100,
-                               child: const Icon(
-                                 Icons.airplane_ticket_outlined,
-                                 size: 30,
-                               ),
-                             ),
-                             const SizedBox(
-                               height: 6,
-                             ),
-                             const Text(
-                               'Flight',
-                               style: TextStyle(fontSize: 15),
-                             )
-                           ],
-                         ),
-                       ),
-                       Padding(
-                         padding: const EdgeInsets.only(left: 8.0),
-                         child: Column(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           crossAxisAlignment: CrossAxisAlignment.center,
-                           children: [
-                             Container(
-                               height: 40,
-                               width: 40,
-                               color: Colors.grey.shade100,
-                               child: const Icon(
-                                 Icons.monetization_on_outlined,
-                                 size: 30,
-                               ),
-                             ),
-                             const SizedBox(
-                               height: 6,
-                             ),
-                             const Text(
-                               'Bills',
-                               style: TextStyle(fontSize: 15),
-                             )
-                           ],
-                         ),
-                       ),
-                       Padding(
-                         padding: const EdgeInsets.only(left: 8.0),
-                         child: Column(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           crossAxisAlignment: CrossAxisAlignment.center,
-                           children: [
-                             Container(
-                               height: 40,
-                               width: 40,
-                               color: Colors.grey.shade100,
-                               child: const Icon(
-                                 Icons.battery_1_bar_outlined,
-                                 size: 30,
-                               ),
-                             ),
-                             const SizedBox(
-                               height: 6,
-                             ),
-                             const Text(
-                               'Electricity',
-                               style: TextStyle(fontSize: 15),
-                             )
-                           ],
-                         ),
-                       ),
-                       Padding(
-                         padding: const EdgeInsets.only(left: 8.0),
-                         child: Column(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           crossAxisAlignment: CrossAxisAlignment.center,
-                           children: [
-                             Container(
-                               height: 40,
-                               width: 40,
-                               color: Colors.grey.shade100,
-                               child: const Icon(
-                                 Icons.phone_android,
-                                 size: 30,
-                               ),
-                             ),
-                             const SizedBox(
-                               height: 6,
-                             ),
-                             const Text(
-                               'Data Plan',
-                               style: TextStyle(fontSize: 15),
-                             )
-                           ],
-                         ),
-                       )
-                        ,Padding(
-                         padding: const EdgeInsets.only(left: 8.0),
-                         child: Column(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           crossAxisAlignment: CrossAxisAlignment.center,
-                           children: [
-                             Container(
-                               height: 40,
-                               width: 40,
-                               color: Colors.grey.shade100,
-                               child: const Icon(
-                                 Icons.phone_android,
-                                 size: 30,
-                               ),
-                             ),
-                             const SizedBox(
-                               height: 6,
-                             ),
-                             const Text(
-                               'Data Plan',
-                               style: TextStyle(fontSize: 15),
-                             )
-                           ],
-                         ),
-                       ),
-                       Padding(
-                         padding: const EdgeInsets.only(left: 8.0),
-                         child: Column(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           crossAxisAlignment: CrossAxisAlignment.center,
-                           children: [
-                             Container(
-                               height: 40,
-                               width: 40,
-                               color: Colors.grey.shade100,
-                               child: const Icon(
-                                 Icons.phone_android,
-                                 size: 30,
-                               ),
-                             ),
-                             const SizedBox(
-                               height: 6,
-                             ),
-                             const Text(
-                               'Data Plan',
-                               style: TextStyle(fontSize: 15),
-                             )
-                           ],
-                         ),
-                       )
-                    ],
+                     children: 
+                      brandWidgets
+                      
                    ),
                  ),
                                     ),
               ),
-            ),
-           
+            ),  
           ],
        
        

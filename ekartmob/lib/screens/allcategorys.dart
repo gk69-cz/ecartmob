@@ -18,23 +18,30 @@ class categories extends StatelessWidget {
         padding: EdgeInsets.all(0.0), // Add padding for spacing
         child: Categorybox(
             CategoryName: category['categoryName'].toString(),
-            iconValue: getIconFromString(category['icon'].toString())),
+            iconValue: getIconFromString(category['icon'].toString()),
+            bannerPath: category['BannerPath'].toString(),),
       );
     }).toList();
 
     return Scaffold(
+      backgroundColor: Colors.white,
       body: ListView(
+
         children: [
           const SizedBox(
-            height: 20,
+            height: 10,
           ),
-          Container(
-            height: 200,
-            width: 280,
-            decoration: const BoxDecoration(
-                image: DecorationImage(
-                    fit: BoxFit.fitHeight,
-                    image: AssetImage('assets/images/banner.jpg'))),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 200,
+              width: 280,
+              decoration: const BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.elliptical(13, 15)),
+                  image: DecorationImage(
+                      fit: BoxFit.cover,
+                      image: AssetImage('assets/images/category.jpg'))),
+            ),
           ),
           const SizedBox(
             height: 20,

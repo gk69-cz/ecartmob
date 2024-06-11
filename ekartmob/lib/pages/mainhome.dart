@@ -29,6 +29,7 @@ class _MainhomeState extends State<Mainhome> {
     return SafeArea(
         child: Scaffold(
             appBar: AppBar(
+              backgroundColor: Colors.white,
               toolbarHeight: 60,
               centerTitle: myIndex != 0 ? false:true,
               title: Text(appBar),
@@ -77,8 +78,6 @@ class _MainhomeState extends State<Mainhome> {
                   ),
                 )
               ],
-              backgroundColor: Colors.white,
-              shadowColor: Colors.grey,
               shape: const RoundedRectangleBorder(
                   borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(15),

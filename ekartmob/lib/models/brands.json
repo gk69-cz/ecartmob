@@ -1,0 +1,302 @@
+[
+    {
+        "name": "LG",
+        "categories": {
+            "fashion": false,
+            "sports_and_outdoors": false,
+            "electronics": true,
+            "home_and_garden": true,
+            "toys_and_games": false,
+            "beauty_and_health": false
+        },
+        "imageUrl": "https://example.com/lg-logo.png"
+    },
+    {
+        "name": "Nike",
+        "categories": {
+            "fashion": true,
+            "sports_and_outdoors": true,
+            "electronics": false,
+            "home_and_garden": false,
+            "toys_and_games": false,
+            "beauty_and_health": false
+        },
+        "imageUrl": "https://example.com/nike-logo.png"
+    },
+    {
+        "name": "Adidas",
+        "categories": {
+            "fashion": true,
+            "sports_and_outdoors": true,
+            "electronics": false,
+            "home_and_garden": false,
+            "toys_and_games": false,
+            "beauty_and_health": false
+        },
+        "imageUrl": "https://example.com/adidas-logo.png"
+    },
+    {
+        "name": "Samsung",
+        "categories": {
+            "fashion": false,
+            "sports_and_outdoors": false,
+            "electronics": true,
+            "home_and_garden": true,
+            "toys_and_games": false,
+            "beauty_and_health": false
+        },
+        "imageUrl": "https://example.com/samsung-logo.png"
+    },
+    {
+        "name": "Sony",
+        "categories": {
+            "fashion": false,
+            "sports_and_outdoors": false,
+            "electronics": true,
+            "home_and_garden": false,
+            "toys_and_games": true,
+            "beauty_and_health": false
+        },
+        "imageUrl": "https://example.com/sony-logo.png"
+    },
+    {
+        "name": "Apple",
+        "categories": {
+            "fashion": false,
+            "sports_and_outdoors": false,
+            "electronics": true,
+            "home_and_garden": false,
+            "toys_and_games": false,
+            "beauty_and_health": false
+        },
+        "imageUrl": "https://example.com/apple-logo.png"
+    },
+    {
+        "name": "Under Armour",
+        "categories": {
+            "fashion": true,
+            "sports_and_outdoors": true,
+            "electronics": false,
+            "home_and_garden": false,
+            "toys_and_games": false,
+            "beauty_and_health": false
+        },
+        "imageUrl": "https://example.com/underarmour-logo.png"
+    },
+    {
+        "name": "Puma",
+        "categories": {
+            "fashion": true,
+            "sports_and_outdoors": true,
+            "electronics": false,
+            "home_and_garden": false,
+            "toys_and_games": false,
+            "beauty_and_health": false
+        },
+        "imageUrl": "https://example.com/puma-logo.png"
+    },
+    {
+        "name": "Philips",
+        "categories": {
+            "fashion": false,
+            "sports_and_outdoors": false,
+            "electronics": true,
+            "home_and_garden": true,
+            "toys_and_games": false,
+            "beauty_and_health": false
+        },
+        "imageUrl": "https://example.com/philips-logo.png"
+    },
+    {
+        "name": "Bosch",
+        "categories": {
+            "fashion": false,
+            "sports_and_outdoors": false,
+            "electronics": true,
+            "home_and_garden": true,
+            "toys_and_games": false,
+            "beauty_and_health": false
+        },
+        "imageUrl": "https://example.com/bosch-logo.png"
+    },
+    {
+        "name": "Levi's",
+        "categories": {
+            "fashion": true,
+            "sports_and_outdoors": false,
+            "electronics": false,
+            "home_and_garden": false,
+            "toys_and_games": false,
+            "beauty_and_health": false
+        },
+        "imageUrl": "https://example.com/levis-logo.png"
+    },
+    {
+        "name": "H&M",
+        "categories": {
+            "fashion": true,
+            "sports_and_outdoors": false,
+            "electronics": false,
+            "home_and_garden": false,
+            "toys_and_games": false,
+            "beauty_and_health": false
+        },
+        "imageUrl": "https://example.com/hm-logo.png"
+    },
+    {
+        "name": "Columbia",
+        "categories": {
+            "fashion": true,
+            "sports_and_outdoors": true,
+            "electronics": false,
+            "home_and_garden": false,
+            "toys_and_games": false,
+            "beauty_and_health": false
+        },
+        "imageUrl": "https://example.com/columbia-logo.png"
+    },
+    {
+        "name": "Patagonia",
+        "categories": {
+            "fashion": true,
+            "sports_and_outdoors": true,
+            "electronics": false,
+            "home_and_garden": false,
+            "toys_and_games": false,
+            "beauty_and_health": false
+        },
+        "imageUrl": "https://example.com/patagonia-logo.png"
+    },
+    {
+        "name": "Reebok",
+        "categories": {
+            "fashion": true,
+            "sports_and_outdoors": true,
+            "electronics": false,
+            "home_and_garden": false,
+            "toys_and_games": false,
+            "beauty_and_health": false
+        },
+        "imageUrl": "https://example.com/reebok-logo.png"
+    },
+    {
+        "name": "Fisher-Price",
+        "categories": {
+            "fashion": false,
+            "sports_and_outdoors": false,
+            "electronics": false,
+            "home_and_garden": false,
+            "toys_and_games": true,
+            "beauty_and_health": false
+        },
+        "imageUrl": "https://example.com/fisherprice-logo.png"
+    },
+    {
+        "name": "Hasbro",
+        "categories": {
+            "fashion": false,
+            "sports_and_outdoors": false,
+            "electronics": false,
+            "home_and_garden": false,
+            "toys_and_games": true,
+            "beauty_and_health": false
+        },
+        "imageUrl": "https://example.com/hasbro-logo.png"
+    },
+    {
+        "name": "Mattel",
+        "categories": {
+            "fashion": false,
+            "sports_and_outdoors": false,
+            "electronics": false,
+            "home_and_garden": false,
+            "toys_and_games": true,
+            "beauty_and_health": false
+        },
+        "imageUrl": "https://example.com/mattel-logo.png"
+    },
+    {
+        "name": "Lego",
+        "categories": {
+            "fashion": false,
+            "sports_and_outdoors": false,
+            "electronics": false,
+            "home_and_garden": false,
+            "toys_and_games": true,
+            "beauty_and_health": false
+        },
+        "imageUrl": "https://example.com/lego-logo.png"
+    },
+    {
+        "name": "Nerf",
+        "categories": {
+            "fashion": false,
+            "sports_and_outdoors": true,
+            "electronics": false,
+            "home_and_garden": false,
+            "toys_and_games": true,
+            "beauty_and_health": false
+        },
+        "imageUrl": "https://example.com/nerf-logo.png"
+    },
+    {
+        "name": "Maybelline",
+        "categories": {
+            "fashion": false,
+            "sports_and_outdoors": false,
+            "electronics": false,
+            "home_and_garden": false,
+            "toys_and_games": false,
+            "beauty_and_health": true
+        },
+        "imageUrl": "https://example.com/maybelline-logo.png"
+    },
+    {
+        "name": "L'Oréal",
+        "categories": {
+            "fashion": false,
+            "sports_and_outdoors": false,
+            "electronics": false,
+            "home_and_garden": false,
+            "toys_and_games": false,
+            "beauty_and_health": true
+        },
+        "imageUrl": "https://example.com/loreal-logo.png"
+    },
+    {
+        "name": "Neutrogena",
+        "categories": {
+            "fashion": false,
+            "sports_and_outdoors": false,
+            "electronics": false,
+            "home_and_garden": false,
+            "toys_and_games": false,
+            "beauty_and_health": true
+        },
+        "imageUrl": "https://example.com/neutrogena-logo.png"
+    },
+    {
+        "name": "Nivea",
+        "categories": {
+            "fashion": false,
+            "sports_and_outdoors": false,
+            "electronics": false,
+            "home_and_garden": false,
+            "toys_and_games": false,
+            "beauty_and_health": true
+        },
+        "imageUrl": "https://example.com/nivea-logo.png"
+    },
+    {
+        "name": "Gillette",
+        "categories": {
+            "fashion": false,
+            "sports_and_outdoors": false,
+            "electronics": false,
+            "home_and_garden": false,
+            "toys_and_games": false,
+            "beauty_and_health": true
+        },
+        "imageUrl": "https://example.com/gillette-logo.png"
+    }
+]

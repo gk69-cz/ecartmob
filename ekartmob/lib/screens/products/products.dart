@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class ProductsPage extends StatelessWidget {
   ProductsPage({super.key});
@@ -13,7 +12,7 @@ class ProductsPage extends StatelessWidget {
           children: [
           Column(
             children: [
-              Text('All Products'),
+              const Text('All Products'),
               SizedBox(
                 height: 70,
                 width: 380,

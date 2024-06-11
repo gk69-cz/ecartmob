@@ -6,6 +6,10 @@ class Emptywishlist extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+       appBar: AppBar(
+              toolbarHeight: 60,
+              centerTitle: true,
+              title: Text('Wishlist'),),
       body: Padding(
       padding: const EdgeInsets.all(8.0),
       child: Column(

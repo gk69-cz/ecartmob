@@ -6,6 +6,10 @@ class Emptycart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+       appBar: AppBar(
+              toolbarHeight: 60,
+              centerTitle: true,
+              title: Text('Cart'),),
       body: Padding(
       padding: const EdgeInsets.all(8.0),
       child: Column(

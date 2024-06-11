@@ -1,0 +1,65 @@
+[
+    {
+        "name": "product1",
+        "category": "category1",
+        "description": "description1 description1 description1 description1 description1 description1 description1",
+        "amount": "300",
+        "star": 2.3,
+        "reviews": 40,
+        "image_url": "https://picsum.photos/seed/image014/500/800"
+    },
+    {
+        "name": "product2",
+        "category": "category2",
+        "description": "description1 description1 description1 description1 description1 description1 description1",
+        "amount": "300",
+        "star": 2.3,
+        "reviews": 40,
+        "image_url": "https://picsum.photos/seed/image014/500/800"
+    },
+    {
+        "name": "product3",
+        "category": "category3",
+        "description": "description1 description1 description1 description1 description1 description1 description1",
+        "amount": "300",
+        "star": 2.3,
+        "reviews": 40,
+        "image_url": "https://picsum.photos/seed/image014/500/800"
+    },
+    {
+        "name": "product4",
+        "category": "category2",
+        "description": "description1 description1 description1 description1 description1 description1 description1",
+        "amount": "300",
+        "star": 2.3,
+        "reviews": 40,
+        "image_url": "https://picsum.photos/seed/image014/500/800"
+    },
+    {
+        "name": "product5",
+        "category": "category3",
+        "description": "description1 description1 description1 description1 description1 description1 description1",
+        "amount": "300",
+        "star": 2.3,
+        "reviews": 40,
+        "image_url": "https://picsum.photos/seed/image014/500/800"
+    },
+    {
+        "name": "product12",
+        "category": "category3",
+        "description": "description1 description1 description1 description1 description1 description1 description1",
+        "amount": "300",
+        "star": 2.3,
+        "reviews": 40,
+        "image_url": "https://picsum.photos/seed/image014/500/800"
+    },
+    {
+        "name": "product13",
+        "category": "category3",
+        "description": "description1 description1 description1 description1 description1 description1 description1",
+        "amount": "300",
+        "star": 2.3,
+        "reviews": 40,
+        "image_url": "https://picsum.photos/seed/image014/500/800"
+    }
+]

@@ -15,7 +15,7 @@ class Profile extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
+            const Text(
                 "Let's keep the profile updated",
                 style: TextStyle(
                     color: Colors.black, fontSize: 16),

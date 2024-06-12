@@ -2,7 +2,6 @@ import 'package:ekartmob/screens/allcategorys.dart';
 import 'package:ekartmob/screens/emptycart.dart';
 import 'package:ekartmob/screens/emptywishlist.dart';
 import 'package:ekartmob/screens/home.dart';
-import 'package:ekartmob/screens/products/products.dart';
 import 'package:ekartmob/screens/profile.dart';
 import 'package:ekartmob/screens/search.dart';
 import 'package:flutter/material.dart';
@@ -19,8 +18,8 @@ class _MainhomeState extends State<Mainhome> {
   String appBar = 'EasyCart';
   List<Widget> widgetList = [
     const Home(),
-    categories(),
-    Search(),
+    const categories(),
+    const Search(),
     Profile(),
  
   ];

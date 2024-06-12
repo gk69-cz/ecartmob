@@ -26,32 +26,31 @@ class Brandbox extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 3,
                 ),
                 Padding(
-                  padding: EdgeInsets.all(3.0),
+                  padding: const EdgeInsets.all(3.0),
                   child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(15.0),
+                            color: Colors.grey.shade100,
+                          ),
+                          height: 80,
+                          width: 80,
+                          child: Container(
                             decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(15.0),
-                              color: Colors.grey.shade100,
-                            ),
-                            height: 80,
-                            width: 80,
-                            child: Container(
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.all(
-                                      Radius.elliptical(13, 15)),
-                                  image: DecorationImage(
-                                      fit: BoxFit.fitWidth,
-                                      image: AssetImage(ImageUrl)
-                                      )),
-                            ),
-                            ),
+                                borderRadius: const BorderRadius.all(
+                                    Radius.elliptical(13, 15)),
+                                image: DecorationImage(
+                                    fit: BoxFit.fitWidth,
+                                    image: AssetImage(ImageUrl))),
+                          ),
+                        ),
                         Text(brandName),
                       ]),
                 ),

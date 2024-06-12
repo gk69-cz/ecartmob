@@ -8,7 +8,7 @@ Icon getIconFromString(String iconName) {
   String iconNameWithoutClass = iconParts[1]; // electrical_services_outlined
 
   // Get the IconData corresponding to the icon name
-  IconData? iconData = IconData(0); // Initialize with a default value
+  IconData? iconData = const IconData(0); // Initialize with a default value
   switch (iconClass) {
     case 'Icons':
       iconData = IconsHelper.getIconData(iconNameWithoutClass);

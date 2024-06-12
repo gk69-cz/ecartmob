@@ -10,7 +10,8 @@ const GamesProductslist = [
     "stock": 100,
     "rating": 4.7,
     "reviewsCount": 120,
-    "description": "An adrenaline-pumping action video game for gaming enthusiasts.",
+    "description":
+        "An adrenaline-pumping action video game for gaming enthusiasts.",
     "specifications": {
       "platform": "PlayStation 5",
       "genre": "Action",
@@ -58,7 +59,8 @@ const GamesProductslist = [
     "stock": 150,
     "rating": 4.8,
     "reviewsCount": 80,
-    "description": "A captivating fantasy card game with mythical creatures and epic battles.",
+    "description":
+        "A captivating fantasy card game with mythical creatures and epic battles.",
     "specifications": {
       "playerCount": "2-6 players",
       "age": "12+",
@@ -129,7 +131,8 @@ const GamesProductslist = [
     "stock": 70,
     "rating": 4.6,
     "reviewsCount": 50,
-    "description": "A set of action figures featuring popular characters from movies and comics.",
+    "description":
+        "A set of action figures featuring popular characters from movies and comics.",
     "specifications": {
       "characters": 5,
       "material": "Plastic",
@@ -153,7 +156,8 @@ const GamesProductslist = [
     "stock": 30,
     "rating": 4.9,
     "reviewsCount": 40,
-    "description": "A rare and valuable set of collectible coins from around the world.",
+    "description":
+        "A rare and valuable set of collectible coins from around the world.",
     "specifications": {
       "coins": 10,
       "material": "Silver",
@@ -177,7 +181,8 @@ const GamesProductslist = [
     "stock": 100,
     "rating": 4.8,
     "reviewsCount": 90,
-    "description": "A high-quality gaming headset for immersive audio experience.",
+    "description":
+        "A high-quality gaming headset for immersive audio experience.",
     "specifications": {
       "compatibility": "PC, PlayStation, Xbox",
       "connectivity": "Wired",
@@ -201,7 +206,8 @@ const GamesProductslist = [
     "stock": 80,
     "rating": 4.7,
     "reviewsCount": 120,
-    "description": "Embark on an epic adventure with this fantasy role-playing game.",
+    "description":
+        "Embark on an epic adventure with this fantasy role-playing game.",
     "specifications": {
       "platform": "PC, PlayStation, Xbox",
       "mode": "Single Player",
@@ -225,7 +231,8 @@ const GamesProductslist = [
     "stock": 150,
     "rating": 4.5,
     "reviewsCount": 80,
-    "description": "A challenging wooden brain teaser puzzle for puzzle enthusiasts.",
+    "description":
+        "A challenging wooden brain teaser puzzle for puzzle enthusiasts.",
     "specifications": {
       "difficulty": "Intermediate",
       "material": "Wood",

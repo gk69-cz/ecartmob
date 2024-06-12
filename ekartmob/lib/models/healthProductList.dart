@@ -10,7 +10,8 @@ const HealthProducts = [
     "stock": 100,
     "rating": 4.5,
     "reviewsCount": 120,
-    "description": "A smart fitness tracker to monitor your daily activity and workouts.",
+    "description":
+        "A smart fitness tracker to monitor your daily activity and workouts.",
     "specifications": {
       "display": "Color Touchscreen",
       "sensors": "Heart Rate, GPS, Accelerometer",
@@ -35,7 +36,8 @@ const HealthProducts = [
     "stock": 150,
     "rating": 4.8,
     "reviewsCount": 80,
-    "description": "A reliable digital thermometer for accurate temperature readings.",
+    "description":
+        "A reliable digital thermometer for accurate temperature readings.",
     "specifications": {
       "measurementMethod": "Oral, Rectal, Axillary",
       "measurementRange": "32°C to 42.9°C",
@@ -59,7 +61,8 @@ const HealthProducts = [
     "stock": 200,
     "rating": 4.6,
     "reviewsCount": 90,
-    "description": "Daily multivitamin tablets to support overall health and well-being.",
+    "description":
+        "Daily multivitamin tablets to support overall health and well-being.",
     "specifications": {
       "formulation": "Tablets",
       "ingredients": "Vitamins, Minerals",
@@ -83,7 +86,8 @@ const HealthProducts = [
     "stock": 80,
     "rating": 4.7,
     "reviewsCount": 60,
-    "description": "An advanced anti-aging cream to reduce fine lines and wrinkles.",
+    "description":
+        "An advanced anti-aging cream to reduce fine lines and wrinkles.",
     "specifications": {
       "skinType": "All Skin Types",
       "usage": "Morning and Night",
@@ -131,7 +135,8 @@ const HealthProducts = [
     "stock": 70,
     "rating": 4.6,
     "reviewsCount": 50,
-    "description": "An electric toothbrush for superior plaque removal and gum health.",
+    "description":
+        "An electric toothbrush for superior plaque removal and gum health.",
     "specifications": {
       "brushingModes": "3 modes (Clean, Sensitive, Massage)",
       "timer": "2-minute timer",
@@ -179,7 +184,8 @@ const HealthProducts = [
     "stock": 150,
     "rating": 4.8,
     "reviewsCount": 80,
-    "description": "A high-protection sunscreen lotion to shield against harmful UV rays.",
+    "description":
+        "A high-protection sunscreen lotion to shield against harmful UV rays.",
     "specifications": {
       "protectionLevel": "SPF 50+",
       "waterResistance": "Water Resistant (80 minutes)",
@@ -202,7 +208,8 @@ const HealthProducts = [
     "stock": 100,
     "rating": 4.7,
     "reviewsCount": 90,
-    "description": "A digital blood pressure monitor for accurate home monitoring.",
+    "description":
+        "A digital blood pressure monitor for accurate home monitoring.",
     "specifications": {
       "cuffSize": "Fits 9-17 inches arm circumference",
       "memory": "Stores 120 readings for 2 users",
@@ -226,7 +233,8 @@ const HealthProducts = [
     "stock": 120,
     "rating": 4.6,
     "reviewsCount": 80,
-    "description": "High-potency Omega-3 fish oil capsules for heart and brain health.",
+    "description":
+        "High-potency Omega-3 fish oil capsules for heart and brain health.",
     "specifications": {
       "omega3Content": "1000mg per serving",
       "servingSize": "2 capsules per day",

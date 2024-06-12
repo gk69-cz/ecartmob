@@ -16,8 +16,6 @@ class Productbox extends StatelessWidget {
     required this.reviewsCount,
   });
 
-  
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -28,60 +26,66 @@ class Productbox extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SizedBox(
+          const SizedBox(
             height: 3,
           ),
-          Image(
+          const Image(
               height: 150,
               width: 170,
               fit: BoxFit.cover,
               image: AssetImage('assets/images/shirt1.png')),
-          SizedBox(
+          const SizedBox(
             height: 2,
           ),
           Padding(
-            padding: EdgeInsets.all(3.0),
+            padding: const EdgeInsets.all(3.0),
             child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    (productName.length > 20 ? productName.substring(0,19)+"...": productName ).toString(),
-                    style: TextStyle(
+                    (productName.length > 20
+                            ? "${productName.substring(0, 19)}..."
+                            : productName)
+                        .toString(),
+                    style: const TextStyle(
                         color: Colors.grey, fontWeight: FontWeight.bold),
                   ),
                   Text(
-                    (description.length> 48 ? description.substring(0,45)+"...": description ).toString(),
-                    style: TextStyle(
+                    (description.length > 48
+                            ? "${description.substring(0, 45)}..."
+                            : description)
+                        .toString(),
+                    style: const TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.bold,
                         fontSize: 12),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 1,
                   ),
                   Row(
                     children: [
-                      Icon(
+                      const Icon(
                         Icons.star,
                         color: Colors.amber,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 4,
                       ),
                       Text(
                         rating.toString(),
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Colors.grey,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 12,
                       ),
                       Text(
                         price.toString(),
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 15,
                           color: Colors.green,

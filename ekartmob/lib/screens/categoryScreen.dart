@@ -1,7 +1,6 @@
 import 'package:ekartmob/components/brandBox.dart';
 import 'package:ekartmob/components/productbox.dart';
 import 'package:ekartmob/models/brands.dart';
-import 'package:ekartmob/models/electronicsProducts.dart';
 import 'package:ekartmob/models/products.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +18,7 @@ class Categoryscreen extends StatelessWidget {
       return categories is Map && categories[categoryName] == true;
     }).map((brand) {
       return Container(
-        padding: EdgeInsets.all(0.0),
+        padding: const EdgeInsets.all(0.0),
         child: Brandbox(
           brandName: brand['name'].toString(),
           ImageUrl: brand['imageUrl'].toString(),
@@ -32,7 +31,7 @@ class Categoryscreen extends StatelessWidget {
     }).map((brand) {
       print(brand);
       return Container(
-        padding: EdgeInsets.all(10.0),
+        padding: const EdgeInsets.all(10.0),
         child: Productbox(
           productName: brand['productName'].toString(),
           description: brand['description'].toString(),
@@ -70,7 +69,7 @@ class Categoryscreen extends StatelessWidget {
             height: 200,
             width: 380,
             decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.elliptical(13, 15)),
+                borderRadius: const BorderRadius.all(Radius.elliptical(13, 15)),
                 image: DecorationImage(
                     fit: BoxFit.fitWidth, image: AssetImage(bannerPath))),
           ),
@@ -99,7 +98,7 @@ class Categoryscreen extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 2,
           ),
           Padding(
@@ -118,8 +117,8 @@ class Categoryscreen extends StatelessWidget {
               ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(left: 10.0, right: 10),
+          const Padding(
+            padding: EdgeInsets.only(left: 10.0, right: 10),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -144,7 +143,7 @@ class Categoryscreen extends StatelessWidget {
             padding: const EdgeInsets.only(top: 6.0),
             child: SingleChildScrollView(
               scrollDirection: Axis.horizontal,
-              child: Container(
+              child: SizedBox(
                 height: 280,
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
@@ -156,8 +155,8 @@ class Categoryscreen extends StatelessWidget {
               ),
             ),
           ),
-            Padding(
-            padding: const EdgeInsets.only(left: 10.0, right: 10),
+          const Padding(
+            padding: EdgeInsets.only(left: 10.0, right: 10),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -168,16 +167,14 @@ class Categoryscreen extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                       color: Colors.black),
                 ),
-               
               ],
             ),
           ),
-        
           Padding(
             padding: const EdgeInsets.only(top: 6.0),
             child: SingleChildScrollView(
               scrollDirection: Axis.horizontal,
-              child: Container(
+              child: SizedBox(
                 height: 280,
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),

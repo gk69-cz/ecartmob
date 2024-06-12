@@ -1,7 +1,5 @@
 import 'package:ekartmob/screens/categoryScreen.dart';
-import 'package:ekartmob/screens/products/products.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class Categorybox extends StatelessWidget {
   final String CategoryName;
@@ -13,7 +11,8 @@ class Categorybox extends StatelessWidget {
     super.key,
     required this.CategoryName,
     required this.iconValue,
-    required this.bannerPath, required this.location,
+    required this.bannerPath,
+    required this.location,
   });
 
   @override
@@ -33,9 +32,10 @@ class Categorybox extends StatelessWidget {
             );
           },
           child: Container(
-            
             decoration: BoxDecoration(
-              border:location != "Home"? Border.all(color: const Color.fromARGB(32, 0, 0, 0)):Border.all(color: Colors.transparent),
+              border: location != "Home"
+                  ? Border.all(color: const Color.fromARGB(32, 0, 0, 0))
+                  : Border.all(color: Colors.transparent),
               borderRadius: BorderRadius.circular(15.0),
               color: Colors.white,
             ),
@@ -45,11 +45,11 @@ class Categorybox extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 3,
                 ),
                 Padding(
-                  padding: EdgeInsets.all(1.0),
+                  padding: const EdgeInsets.all(1.0),
                   child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -62,7 +62,7 @@ class Categorybox extends StatelessWidget {
                             height: 50,
                             width: 50,
                             child: iconValue),
-                        SizedBox(
+                        const SizedBox(
                           height: 9,
                         ),
                         Text(CategoryName),

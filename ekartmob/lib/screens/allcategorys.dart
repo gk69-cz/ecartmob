@@ -1,12 +1,7 @@
-import 'dart:convert';
-
 import 'package:ekartmob/components/categorybox.dart';
 import 'package:ekartmob/helpers/iconhelpers.dart';
-import 'package:ekartmob/mainComponents/categorygrid.dart';
 import 'package:ekartmob/models/categories.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter/widgets.dart';
 
 class categories extends StatelessWidget {
   const categories({super.key});
@@ -15,18 +10,19 @@ class categories extends StatelessWidget {
   Widget build(BuildContext context) {
     List<Widget> categoryWidgets = categoriesList.map((category) {
       return Container(
-        padding: EdgeInsets.all(0.0), // Add padding for spacing
+        padding: const EdgeInsets.all(0.0), // Add padding for spacing
         child: Categorybox(
-            CategoryName: category['categoryName'].toString(),
-            iconValue: getIconFromString(category['icon'].toString()),
-            bannerPath: category['BannerPath'].toString(), location: 'Categories',),
+          CategoryName: category['categoryName'].toString(),
+          iconValue: getIconFromString(category['icon'].toString()),
+          bannerPath: category['BannerPath'].toString(),
+          location: 'Categories',
+        ),
       );
     }).toList();
 
     return Scaffold(
       backgroundColor: Colors.white,
       body: ListView(
-
         children: [
           const SizedBox(
             height: 10,
@@ -37,7 +33,7 @@ class categories extends StatelessWidget {
               height: 200,
               width: 280,
               decoration: const BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.elliptical(13, 15)),
+                  borderRadius: BorderRadius.all(Radius.elliptical(13, 15)),
                   image: DecorationImage(
                       fit: BoxFit.cover,
                       image: AssetImage('assets/images/category.jpg'))),
@@ -61,7 +57,7 @@ class categories extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Padding(

@@ -7,12 +7,13 @@ class Categorybox extends StatelessWidget {
   final String CategoryName;
   final Icon iconValue;
   final String bannerPath;
+  final String location;
 
   const Categorybox({
     super.key,
     required this.CategoryName,
     required this.iconValue,
-    required this.bannerPath,
+    required this.bannerPath, required this.location,
   });
 
   @override
@@ -32,8 +33,9 @@ class Categorybox extends StatelessWidget {
             );
           },
           child: Container(
+            
             decoration: BoxDecoration(
-              border: Border.all(color: const Color.fromARGB(32, 0, 0, 0)),
+              border:location != "Home"? Border.all(color: const Color.fromARGB(32, 0, 0, 0)):Border.all(color: Colors.transparent),
               borderRadius: BorderRadius.circular(15.0),
               color: Colors.white,
             ),

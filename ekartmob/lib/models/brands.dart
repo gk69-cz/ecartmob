@@ -286,7 +286,7 @@ const brandList =
             "Games": false,
             "Health": true
         },
-        "imageUrl": "https://example.com/nivea-logo.png"
+        "imageUrl": "assets/images/addidas.jpg"
     },
     {
         "name": "Gillette",

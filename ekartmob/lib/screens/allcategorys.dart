@@ -19,7 +19,7 @@ class categories extends StatelessWidget {
         child: Categorybox(
             CategoryName: category['categoryName'].toString(),
             iconValue: getIconFromString(category['icon'].toString()),
-            bannerPath: category['BannerPath'].toString(),),
+            bannerPath: category['BannerPath'].toString(), location: 'Categories',),
       );
     }).toList();
 

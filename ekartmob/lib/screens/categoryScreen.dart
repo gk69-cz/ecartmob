@@ -28,16 +28,16 @@ class Categoryscreen extends StatelessWidget {
 
     List<Widget> ProductWidgets = products.where((product) {
       return product['category'] == categoryName;
-    }).map((brand) {
-      print(brand);
+    }).map((product) {
       return Container(
         padding: const EdgeInsets.all(10.0),
         child: Productbox(
-          productName: brand['productName'].toString(),
-          description: brand['description'].toString(),
-          price: brand['price'].toString(),
-          rating: brand['rating'].toString(),
-          reviewsCount: brand['reviewsCount:'].toString(),
+          productName: product['productName'].toString(),
+          description: product['description'].toString(),
+          price: product['price'].toString(),
+          rating: product['rating'].toString(),
+          reviewsCount: product['reviewsCount'].toString(),
+          productId: product['productId'].toString(),
         ),
       );
     }).toList();

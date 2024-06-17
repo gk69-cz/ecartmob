@@ -1,7 +1,10 @@
+import 'dart:math';
+
 import 'package:ekartmob/components/categorybox.dart';
 import 'package:ekartmob/components/productbox.dart';
 import 'package:ekartmob/helpers/iconhelpers.dart';
 import 'package:ekartmob/models/categories.dart';
+import 'package:ekartmob/models/products.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -9,6 +12,38 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    List categoryList = categoriesList;
+var int = Random().nextInt(categoryList.length -1);
+
+final List<String> categorySelected = (categoryList[int] as Map<dynamic, dynamic>)
+        .entries
+        .map((entry) => '${entry.key}: ${entry.value}')
+        .toList();
+
+List value = categorySelected[0].split(': ');
+print(value[1]);
+
+
+
+List<Widget> ProductWidgets = products.where((product) {
+ 
+      return product['category'] == value[1];
+    }).map((product) {
+      print(product);
+      return Container(
+        padding: const EdgeInsets.all(10.0),
+        child: Productbox(
+          productName: product['productName'].toString(),
+          description: product['description'].toString(),
+          price: product['price'].toString(),
+          rating: product['rating'].toString(),
+          reviewsCount: product['reviewsCount'].toString(),
+          productId: product['productId'].toString(),
+        ),
+      );
+    }).toList();
+
+
     List<Widget> categoryWidgets = categoriesList.map((category) {
       return Container(
         padding: const EdgeInsets.all(0.0), // Add padding for spacing
@@ -79,39 +114,35 @@ class Home extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                             color: Colors.black),
                       ),
-                      Text(
+                  
+                        Text(
                         'See More',
                         style: TextStyle(
                           fontSize: 13,
                           color: Colors.black,
-                        ),
-                      ),
+                        ),)
+                  
+                      
                     ],
                   ),
                 ),
                 //item boxes start
-                Padding(
-                  padding: const EdgeInsets.only(top: 8.0, left: 18, right: 17),
+                 Padding(
+            padding: const EdgeInsets.only(top: 6.0),
+            child: SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: SizedBox(
+                height: 280,
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
                   child: Row(
-                    children: [
-                      Productbox(
-                        productName: 'TextBrand',
-                        description: 'testing description',
-                        price: 200.toString(),
-                        rating: 9.toString(),
-                        reviewsCount: 666.toString(),
-                      ),
-                      const SizedBox(width: 7),
-                      Productbox(
-                        productName: 'TextBrand',
-                        description: 'testing description',
-                        price: 200.toString(),
-                        rating: 9.toString(),
-                        reviewsCount: 666.toString(),
-                      ),
-                    ],
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: ProductWidgets,
                   ),
                 ),
+              ),
+            ),
+          ),
               ],
             ),
           ],

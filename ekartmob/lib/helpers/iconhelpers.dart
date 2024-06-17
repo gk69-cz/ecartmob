@@ -23,7 +23,6 @@ Icon getIconFromString(String iconName) {
 // Helper class to get IconData from icon name
 class IconsHelper {
   static IconData? getIconData(String iconName) {
-    print(iconName);
     switch (iconName) {
       case 'accessibility_new':
         return Icons.accessibility_new;

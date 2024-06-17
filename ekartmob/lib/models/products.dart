@@ -20,15 +20,15 @@ const products = [
     },
     "bannerPath": "assets/images/fashion/men_casual_shirt.png",
     "images": [
-      "assets/images/fashion/men_casual_shirt_1.png",
-      "assets/images/fashion/men_casual_shirt_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ],
     "features": {
-      "Sizes Available": true,
-      "Multiple Colors": true,
-      "Fabric Type": true,
-      "Machine Washable": true,
-      "Seasonal Wear": true
+      "Sizes Available": "Yes",
+      "Multiple Colors": "Yes",
+      "Fabric Type": "Yes",
+      "Machine Washable": "Yes",
+      "Seasonal Wear": "Yes"
     }
   },
   {
@@ -52,15 +52,15 @@ const products = [
     },
     "bannerPath": "assets/images/fashion/women_summer_dress.png",
     "images": [
-      "assets/images/fashion/women_summer_dress_1.png",
-      "assets/images/fashion/women_summer_dress_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ],
     "features": {
-      "Sizes Available": true,
-      "Multiple Colors": true,
-      "Fabric Type": true,
-      "Machine Washable": true,
-      "Seasonal Wear": true
+      "Sizes Available": "Yes",
+      "Multiple Colors": "Yes",
+      "Fabric Type": "Yes",
+      "Machine Washable": "Yes",
+      "Seasonal Wear": "Yes"
     }
   },
   {
@@ -84,15 +84,15 @@ const products = [
     },
     "bannerPath": "assets/images/fashion/kids_tshirt.png",
     "images": [
-      "assets/images/fashion/kids_tshirt_1.png",
-      "assets/images/fashion/kids_tshirt_2.png"
+    "assets/images/shirt1.png",
+    "assets/images/shirt1.png"
     ],
     "features": {
-      "Sizes Available": true,
-      "Multiple Colors": true,
-      "Fabric Type": true,
-      "Machine Washable": true,
-      "Seasonal Wear": true
+      "Sizes Available": "Yes",
+      "Multiple Colors": "Yes",
+      "Fabric Type": "Yes",
+      "Machine Washable": "Yes",
+      "Seasonal Wear": "Yes"
     }
   },
   {
@@ -116,15 +116,15 @@ const products = [
     },
     "bannerPath": "assets/images/fashion/running_shoes.png",
     "images": [
-      "assets/images/fashion/running_shoes_1.png",
-      "assets/images/fashion/running_shoes_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ],
     "features": {
-      "Sizes Available": true,
-      "Multiple Colors": true,
-      "Material Type": true,
-      "Water Resistant": true,
-      "Arch Support": true
+      "Sizes Available": "Yes",
+      "Multiple Colors": "Yes",
+      "Material Type": "Yes",
+      "Water Resistant": "Yes",
+      "Arch Support": "Yes"
     }
   },
   {
@@ -148,15 +148,15 @@ const products = [
     },
     "bannerPath": "assets/images/fashion/leather_belt.png",
     "images": [
-      "assets/images/fashion/leather_belt_1.png",
-      "assets/images/fashion/leather_belt_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ],
     "features": {
-      "Material Type": true,
-      "Multiple Colors": true,
-      "Brand": true,
-      "Warranty": true,
-      "Lightweight": true
+      "Material Type": "Yes",
+      "Multiple Colors": "Yes",
+      "Brand": "Yes",
+      "Warranty": "Yes",
+      "Lightweight": "Yes"
     }
   },
   {
@@ -180,15 +180,15 @@ const products = [
     },
     "bannerPath": "assets/images/fashion/gold_necklace.png",
     "images": [
-      "assets/images/fashion/gold_necklace_1.png",
-      "assets/images/fashion/gold_necklace_2.png"
+     "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ],
     "features": {
-      "Material Type": true,
-      "Multiple Colors": false,
-      "Stone Type": true,
-      "Hypoallergenic": true,
-      "Warranty": true
+      "Material Type": "Yes",
+      "Multiple Colors": "No",
+      "Stone Type": "Yes",
+      "Hypoallergenic": "Yes",
+      "Warranty": "Yes"
     }
   },
   {
@@ -212,15 +212,15 @@ const products = [
     },
     "bannerPath": "assets/images/fashion/digital_watch.png",
     "images": [
-      "assets/images/fashion/digital_watch_1.png",
-      "assets/images/fashion/digital_watch_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ],
     "features": {
-      "Material Type": true,
-      "Multiple Colors": true,
-      "Water Resistant": true,
-      "Warranty": true,
-      "Smart Features": true
+      "Material Type": "Yes",
+      "Multiple Colors": "Yes",
+      "Water Resistant": "Yes",
+      "Warranty": "Yes",
+      "Smart Features": "Yes"
     }
   },
   {
@@ -245,15 +245,15 @@ const products = [
     },
     "bannerPath": "assets/images/fashion/polarized_sunglasses.png",
     "images": [
-      "assets/images/fashion/polarized_sunglasses_1.png",
-      "assets/images/fashion/polarized_sunglasses_2.png"
+     "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ],
     "features": {
-      "Lens Material": true,
-      "Frame Material": true,
-      "UV Protection": true,
-      "Polarized": true,
-      "Warranty": true
+      "Lens Material": "Yes",
+      "Frame Material": "Yes",
+      "UV Protection": "Yes",
+      "Polarized": "Yes",
+      "Warranty": "Yes"
     }
   },
   {
@@ -277,15 +277,15 @@ const products = [
     },
     "bannerPath": "assets/images/fashion/mens_winter_jacket.png",
     "images": [
-      "assets/images/fashion/mens_winter_jacket_1.png",
-      "assets/images/fashion/mens_winter_jacket_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ],
     "features": {
-      "Sizes Available": true,
-      "Multiple Colors": true,
-      "Material Type": true,
-      "Water Resistant": true,
-      "Insulated": true
+      "Sizes Available": "Yes",
+      "Multiple Colors": "Yes",
+      "Material Type": "Yes",
+      "Water Resistant": "Yes",
+      "Insulated": "Yes"
     }
   },
   {
@@ -309,15 +309,15 @@ const products = [
     },
     "bannerPath": "assets/images/fashion/womens_trench_coat.png",
     "images": [
-      "assets/images/fashion/womens_trench_coat_1.png",
-      "assets/images/fashion/womens_trench_coat_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ],
     "features": {
-      "Sizes Available": true,
-      "Multiple Colors": true,
-      "Material Type": true,
-      "Water Resistant": true,
-      "Insulated": false
+      "Sizes Available": "Yes",
+      "Multiple Colors": "Yes",
+      "Material Type": "Yes",
+      "Water Resistant": "Yes",
+      "Insulated": "No"
     }
   },
   {
@@ -344,15 +344,15 @@ const products = [
     },
     "bannerPath": "assets/images/electronics/laptop_xyz.png",
     "images": [
-      "assets/images/electronics/laptop_xyz_1.png",
-      "assets/images/electronics/laptop_xyz_2.png"
+     "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ],
     "features": {
-      "Touchscreen": true,
-      "2-in-1 Design": false,
-      "Lightweight": true,
-      "Long Battery Life": true,
-      "High Performance": true
+      "Touchscreen": "Yes",
+      "2-in-1 Design": "No",
+      "Lightweight": "Yes",
+      "Long Battery Life": "Yes",
+      "High Performance": "Yes"
     }
   },
   {
@@ -379,15 +379,15 @@ const products = [
     },
     "bannerPath": "assets/images/electronics/tablet_abc.png",
     "images": [
-      "assets/images/electronics/tablet_abc_1.png",
-      "assets/images/electronics/tablet_abc_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ],
     "features": {
-      "Stylus Support": true,
-      "High-Resolution Display": true,
-      "LTE/5G Connectivity": false,
-      "Compact Size": true,
-      "Multi-User Profiles": false
+      "Stylus Support": "Yes",
+      "High-Resolution Display": "Yes",
+      "LTE/5G Connectivity": "No",
+      "Compact Size": "Yes",
+      "Multi-User Profiles": "No"
     }
   },
   {
@@ -412,15 +412,15 @@ const products = [
     },
     "bannerPath": "assets/images/electronics/camera_def.png",
     "images": [
-      "assets/images/electronics/camera_def_1.png",
-      "assets/images/electronics/camera_def_2.png"
+     "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ],
     "features": {
-      "Interchangeable Lenses": true,
-      "4K Video Recording": true,
-      "WiFi/Bluetooth": true,
-      "Weather-Sealed": false,
-      "High ISO Range": true
+      "Interchangeable Lenses": "Yes",
+      "4K Video Recording": "Yes",
+      "WiFi/Bluetooth": "Yes",
+      "Weather-Sealed": "No",
+      "High ISO Range": "Yes"
     }
   },
   {
@@ -444,15 +444,15 @@ const products = [
     },
     "bannerPath": "assets/images/electronics/tv_ghi.png",
     "images": [
-      "assets/images/electronics/tv_ghi_1.png",
-      "assets/images/electronics/tv_ghi_2.png"
+     "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ],
     "features": {
-      "Smart TV Features": true,
-      "HDR Support": true,
-      "4K/8K Resolution": true,
-      "Thin Bezel Design": true,
-      "Voice Control": true
+      "Smart TV Features": "Yes",
+      "HDR Support": "Yes",
+      "4K/8K Resolution": "Yes",
+      "Thin Bezel Design": "Yes",
+      "Voice Control": "Yes"
     }
   },
   {
@@ -481,11 +481,11 @@ const products = [
       "assets/images/electronics/headphones_jkl_2.png"
     ],
     "features": {
-      "Noise Cancellation": true,
-      "Wireless Connectivity": true,
-      "High-Resolution Audio": false,
-      "Waterproof": false,
-      "Long Battery Life": true
+      "Noise Cancellation": "Yes",
+      "Wireless Connectivity": "Yes",
+      "High-Resolution Audio": "No",
+      "Waterproof": "No",
+      "Long Battery Life": "Yes"
     }
   },
   {
@@ -514,11 +514,11 @@ const products = [
       "assets/images/electronics/smartwatch_mno_2.png"
     ],
     "features": {
-      "Fitness Tracking": true,
-      "Heart Rate Monitoring": true,
-      "Water Resistant": true,
-      "GPS": true,
-      "Customizable Watch Faces": true
+      "Fitness Tracking": "Yes",
+      "Heart Rate Monitoring": "Yes",
+      "Water Resistant": "Yes",
+      "GPS": "Yes",
+      "Customizable Watch Faces": "Yes"
     }
   },
   {
@@ -545,11 +545,11 @@ const products = [
       "assets/images/electronics/console_pqr_2.png"
     ],
     "features": {
-      "High-Performance Graphics": true,
-      "VR Support": true,
-      "Backward Compatibility": true,
-      "Online Multiplayer": true,
-      "Exclusive Titles": true
+      "High-Performance Graphics": "Yes",
+      "VR Support": "Yes",
+      "Backward Compatibility": "Yes",
+      "Online Multiplayer": "Yes",
+      "Exclusive Titles": "Yes"
     }
   },
   {
@@ -580,11 +580,11 @@ const products = [
       "assets/images/electronics/laptop_stu_2.png"
     ],
     "features": {
-      "Touchscreen": false,
-      "2-in-1 Design": true,
-      "Lightweight": true,
-      "Long Battery Life": true,
-      "High Performance": true
+      "Touchscreen": "No",
+      "2-in-1 Design": "Yes",
+      "Lightweight": "Yes",
+      "Long Battery Life": "Yes",
+      "High Performance": "Yes"
     }
   },
   {
@@ -612,11 +612,11 @@ const products = [
       "assets/images/electronics/tv_vwx_2.png"
     ],
     "features": {
-      "Smart TV Features": true,
-      "HDR Support": true,
-      "4K/8K Resolution": true,
-      "Thin Bezel Design": true,
-      "Voice Control": true
+      "Smart TV Features": "Yes",
+      "HDR Support": "Yes",
+      "4K/8K Resolution": "Yes",
+      "Thin Bezel Design": "Yes",
+      "Voice Control": "Yes"
     }
   },
   {
@@ -644,11 +644,11 @@ const products = [
       "assets/images/electronics/earbuds_yza_2.png"
     ],
     "features": {
-      "Noise Cancellation": false,
-      "Wireless Connectivity": true,
-      "High-Resolution Audio": true,
-      "Waterproof": false,
-      "Long Battery Life": true
+      "Noise Cancellation": "No",
+      "Wireless Connectivity": "Yes",
+      "High-Resolution Audio": "Yes",
+      "Waterproof": "No",
+      "Long Battery Life": "Yes"
     }
   },
   {
@@ -677,11 +677,11 @@ const products = [
       "assets/images/electronics/action_camera_bcd_2.png"
     ],
     "features": {
-      "Interchangeable Lenses": false,
-      "4K Video Recording": true,
-      "WiFi/Bluetooth": true,
-      "Weather-Sealed": true,
-      "High ISO Range": false
+      "Interchangeable Lenses": "No",
+      "4K Video Recording": "Yes",
+      "WiFi/Bluetooth": "Yes",
+      "Weather-Sealed": "Yes",
+      "High ISO Range": "No"
     }
   },
   {
@@ -708,11 +708,11 @@ const products = [
       "assets/images/home_goods/modern_sofa_2.png"
     ],
     "features": {
-      "Material Type": true,
-      "Assembly Required": true,
-      "Adjustable": false,
-      "Ergonomic": true,
-      "Space-Saving": false
+      "Material Type": "Yes",
+      "Assembly Required": "Yes",
+      "Adjustable": "No",
+      "Ergonomic": "Yes",
+      "Space-Saving": "No"
     }
   },
   {
@@ -739,11 +739,11 @@ const products = [
       "assets/images/home_goods/cookware_set_2.png"
     ],
     "features": {
-      "Material Type": true,
-      "Dishwasher Safe": true,
-      "Non-Stick": true,
-      "Microwave Safe": false,
-      "Oven Safe": true
+      "Material Type": "Yes",
+      "Dishwasher Safe": "Yes",
+      "Non-Stick": "Yes",
+      "Microwave Safe": "No",
+      "Oven Safe": "Yes"
     }
   },
   {
@@ -770,11 +770,11 @@ const products = [
       "assets/images/home_goods/wall_art_2.png"
     ],
     "features": {
-      "Material Type": true,
-      "Handmade": true,
-      "Eco-Friendly": true,
-      "Customizable": false,
-      "Indoor/Outdoor": true
+      "Material Type": "Yes",
+      "Handmade": "Yes",
+      "Eco-Friendly": "Yes",
+      "Customizable": "No",
+      "Indoor/Outdoor": "Yes"
     }
   },
   {
@@ -802,11 +802,11 @@ const products = [
       "assets/images/home_goods/bed_sheet_set_2.png"
     ],
     "features": {
-      "Material Type": true,
-      "Thread Count": true,
-      "Hypoallergenic": true,
-      "Machine Washable": true,
-      "Temperature Control": false
+      "Material Type": "Yes",
+      "Thread Count": "Yes",
+      "Hypoallergenic": "Yes",
+      "Machine Washable": "Yes",
+      "Temperature Control": "No"
     }
   },
   {
@@ -833,11 +833,11 @@ const products = [
       "assets/images/home_goods/bathroom_towel_set_2.png"
     ],
     "features": {
-      "Material Type": true,
-      "Quick-Drying": true,
-      "Mold/Mildew Resistant": false,
-      "Machine Washable": true,
-      "Non-Slip": false
+      "Material Type": "Yes",
+      "Quick-Drying": "Yes",
+      "Mold/Mildew Resistant": "No",
+      "Machine Washable": "Yes",
+      "Non-Slip": "No"
     }
   },
   {
@@ -861,15 +861,15 @@ const products = [
     },
     "bannerPath": "assets/images/home_goods/led_desk_lamp.png",
     "images": [
-      "assets/images/home_goods/led_desk_lamp_1.png",
-      "assets/images/home_goods/led_desk_lamp_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ],
     "features": {
-      "Material Type": true,
-      "Dimmable": true,
-      "Energy Efficient": true,
-      "Smart Features": false,
-      "Adjustable": true
+      "Material Type": "Yes",
+      "Dimmable": "Yes",
+      "Energy Efficient": "Yes",
+      "Smart Features": "No",
+      "Adjustable": "Yes"
     }
   },
   {
@@ -893,15 +893,15 @@ const products = [
     },
     "bannerPath": "assets/images/home_goods/storage_bins.png",
     "images": [
-      "assets/images/home_goods/storage_bins_1.png",
-      "assets/images/home_goods/storage_bins_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ],
     "features": {
-      "Material Type": true,
-      "Stackable": true,
-      "Foldable": false,
-      "Lid Included": true,
-      "Waterproof": true
+      "Material Type": "Yes",
+      "Stackable": "Yes",
+      "Foldable": "No",
+      "Lid Included": "Yes",
+      "Waterproof": "Yes"
     }
   },
   {
@@ -925,15 +925,15 @@ const products = [
     },
     "bannerPath": "assets/images/home_goods/cleaning_spray.png",
     "images": [
-      "assets/images/home_goods/cleaning_spray_1.png",
-      "assets/images/home_goods/cleaning_spray_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ],
     "features": {
-      "Eco-Friendly": true,
-      "Multi-Surface": true,
-      "Scented": true,
-      "Disinfectant": true,
-      "Refillable": false
+      "Eco-Friendly": "Yes",
+      "Multi-Surface": "Yes",
+      "Scented": "Yes",
+      "Disinfectant": "Yes",
+      "Refillable": "No"
     }
   },
   {
@@ -957,15 +957,15 @@ const products = [
     },
     "bannerPath": "assets/images/home_goods/cordless_drill.png",
     "images": [
-      "assets/images/home_goods/cordless_drill_1.png",
-      "assets/images/home_goods/cordless_drill_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ],
     "features": {
-      "Material Type": true,
-      "Ergonomic": true,
-      "Cordless": true,
-      "Multi-Functional": true,
-      "Warranty": true
+      "Material Type": "Yes",
+      "Ergonomic": "Yes",
+      "Cordless": "Yes",
+      "Multi-Functional": "Yes",
+      "Warranty": "Yes"
     }
   },
   {
@@ -989,15 +989,15 @@ const products = [
     },
     "bannerPath": "assets/images/home_goods/handheld_vacuum.png",
     "images": [
-      "assets/images/home_goods/handheld_vacuum_1.png",
-      "assets/images/home_goods/handheld_vacuum_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ],
     "features": {
-      "Eco-Friendly": false,
-      "Multi-Surface": true,
-      "Scented": false,
-      "Disinfectant": false,
-      "Refillable": false
+      "Eco-Friendly": "No",
+      "Multi-Surface": "Yes",
+      "Scented": "No",
+      "Disinfectant": "No",
+      "Refillable": "No"
     }
   },
   {
@@ -1021,19 +1021,19 @@ const products = [
     },
     "bannerPath": "assets/images/sports/adjustable_dumbbells.png",
     "images": [
-      "assets/images/sports/adjustable_dumbbells_1.png",
-      "assets/images/sports/adjustable_dumbbells_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ],
     "features": {
-      "Material Type": true,
-      "Adjustable": true,
-      "Portable": false,
-      "Digital Display": false,
-      "Smart Features": false
+      "Material Type": "Yes",
+      "Adjustable": "Yes",
+      "Portable": "No",
+      "Digital Display": "No",
+      "Smart Features": "No"
     }
   },
   {
-    "productId": "987652",
+    "productId": "987622",
     "productName": "Camping Tent",
     "category": "Sports",
     "subCategory": "Outdoor",
@@ -1053,19 +1053,19 @@ const products = [
     },
     "bannerPath": "assets/images/sports/camping_tent.png",
     "images": [
-      "assets/images/sports/camping_tent_1.png",
-      "assets/images/sports/camping_tent_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ],
     "features": {
-      "Material Type": true,
-      "Weather Resistant": true,
-      "Portable": true,
-      "Eco-Friendly": false,
-      "Durable": true
+      "Material Type": "Yes",
+      "Weather Resistant": "Yes",
+      "Portable": "Yes",
+      "Eco-Friendly": "No",
+      "Durable": "Yes"
     }
   },
   {
-    "productId": "987653",
+    "productId": "9876253",
     "productName": "Running T-Shirt",
     "category": "Sports",
     "subCategory": "Sportswear",
@@ -1084,15 +1084,15 @@ const products = [
     },
     "bannerPath": "assets/images/sports/running_tshirt.png",
     "images": [
-      "assets/images/sports/running_tshirt_1.png",
-      "assets/images/sports/running_tshirt_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ],
     "features": {
-      "Material Type": true,
-      "Breathable": true,
-      "Moisture-Wicking": true,
-      "Stretchable": true,
-      "Anti-Odor": false
+      "Material Type": "Yes",
+      "Breathable": "Yes",
+      "Moisture-Wicking": "Yes",
+      "Stretchable": "Yes",
+      "Anti-Odor": "No"
     }
   },
   {
@@ -1115,15 +1115,15 @@ const products = [
     },
     "bannerPath": "assets/images/sports/trail_running_shoes.png",
     "images": [
-      "assets/images/sports/trail_running_shoes_1.png",
-      "assets/images/sports/trail_running_shoes_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ],
     "features": {
-      "Material Type": true,
-      "Waterproof": true,
-      "Breathable": true,
-      "Slip-Resistant": true,
-      "Cushioned": true
+      "Material Type": "Yes",
+      "Waterproof": "Yes",
+      "Breathable": "Yes",
+      "Slip-Resistant": "Yes",
+      "Cushioned": "Yes"
     }
   },
   {
@@ -1146,15 +1146,15 @@ const products = [
     },
     "bannerPath": "assets/images/sports/soccer_jersey.png",
     "images": [
-      "assets/images/sports/soccer_jersey_1.png",
-      "assets/images/sports/soccer_jersey_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ],
     "features": {
-      "Material Type": true,
-      "Customizable": true,
-      "Lightweight": true,
-      "Durable": true,
-      "Eco-Friendly": false
+      "Material Type": "Yes",
+      "Customizable": "Yes",
+      "Lightweight": "Yes",
+      "Durable": "Yes",
+      "Eco-Friendly": "No"
     }
   },
   {
@@ -1178,8 +1178,8 @@ const products = [
     },
     "bannerPath": "assets/images/Games/action_video_game.png",
     "images": [
-      "assets/images/Games/action_video_game_1.png",
-      "assets/images/Games/action_video_game_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ]
   },
   {
@@ -1202,8 +1202,8 @@ const products = [
     },
     "bannerPath": "assets/images/Games/strategy_board_game.png",
     "images": [
-      "assets/images/Games/strategy_board_game_1.png",
-      "assets/images/Games/strategy_board_game_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ]
   },
   {
@@ -1227,8 +1227,8 @@ const products = [
     },
     "bannerPath": "assets/images/Games/fantasy_card_game.png",
     "images": [
-      "assets/images/Games/fantasy_card_game_1.png",
-      "assets/images/Games/fantasy_card_game_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ]
   },
   {
@@ -1250,8 +1250,8 @@ const products = [
     },
     "bannerPath": "assets/images/Games/jigsaw_puzzle.png",
     "images": [
-      "assets/images/Games/jigsaw_puzzle_1.png",
-      "assets/images/Games/jigsaw_puzzle_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ]
   },
   {
@@ -1274,8 +1274,8 @@ const products = [
     },
     "bannerPath": "assets/images/Games/science_kit.png",
     "images": [
-      "assets/images/Games/science_kit_1.png",
-      "assets/images/Games/science_kit_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ]
   },
   {
@@ -1299,8 +1299,8 @@ const products = [
     },
     "bannerPath": "assets/images/Games/action_figures.png",
     "images": [
-      "assets/images/Games/action_figures_1.png",
-      "assets/images/Games/action_figures_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ]
   },
   {
@@ -1324,8 +1324,8 @@ const products = [
     },
     "bannerPath": "assets/images/Games/collectible_coins.png",
     "images": [
-      "assets/images/Games/collectible_coins_1.png",
-      "assets/images/Games/collectible_coins_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ]
   },
   {
@@ -1349,8 +1349,8 @@ const products = [
     },
     "bannerPath": "assets/images/Games/gaming_headset.png",
     "images": [
-      "assets/images/Games/gaming_headset_1.png",
-      "assets/images/Games/gaming_headset_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ]
   },
   {
@@ -1374,8 +1374,8 @@ const products = [
     },
     "bannerPath": "assets/images/Games/rpg_game.png",
     "images": [
-      "assets/images/Games/rpg_game_1.png",
-      "assets/images/Games/rpg_game_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ]
   },
   {
@@ -1398,8 +1398,8 @@ const products = [
     },
     "bannerPath": "assets/images/Games/wooden_puzzle.png",
     "images": [
-      "assets/images/Games/wooden_puzzle_1.png",
-      "assets/images/Games/wooden_puzzle_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ]
   },
   {
@@ -1424,8 +1424,8 @@ const products = [
     },
     "bannerPath": "assets/images/personal/fitness_tracker.png",
     "images": [
-      "assets/images/personal/fitness_tracker_1.png",
-      "assets/images/personal/fitness_tracker_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ]
   },
   {
@@ -1449,8 +1449,8 @@ const products = [
     },
     "bannerPath": "assets/images/personal/digital_thermometer.png",
     "images": [
-      "assets/images/personal/digital_thermometer_1.png",
-      "assets/images/personal/digital_thermometer_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ]
   },
   {
@@ -1474,8 +1474,8 @@ const products = [
     },
     "bannerPath": "assets/images/personal/multivitamin_tablets.png",
     "images": [
-      "assets/images/personal/multivitamin_tablets_1.png",
-      "assets/images/personal/multivitamin_tablets_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ]
   },
   {
@@ -1499,8 +1499,8 @@ const products = [
     },
     "bannerPath": "assets/images/personal/anti_aging_cream.png",
     "images": [
-      "assets/images/personal/anti_aging_cream_1.png",
-      "assets/images/personal/anti_aging_cream_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ]
   },
   {
@@ -1523,8 +1523,8 @@ const products = [
     },
     "bannerPath": "assets/images/personal/moisturizing_shampoo.png",
     "images": [
-      "assets/images/personal/moisturizing_shampoo_1.png",
-      "assets/images/personal/moisturizing_shampoo_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ]
   },
   {
@@ -1548,8 +1548,8 @@ const products = [
     },
     "bannerPath": "assets/images/personal/electric_toothbrush.png",
     "images": [
-      "assets/images/personal/electric_toothbrush_1.png",
-      "assets/images/personal/electric_toothbrush_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ]
   },
   {
@@ -1572,8 +1572,8 @@ const products = [
     },
     "bannerPath": "assets/images/personal/first_aid_kit.png",
     "images": [
-      "assets/images/personal/first_aid_kit_1.png",
-      "assets/images/personal/first_aid_kit_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ]
   },
   {
@@ -1596,8 +1596,8 @@ const products = [
     },
     "bannerPath": "assets/images/personal/sunscreen_lotion.png",
     "images": [
-      "assets/images/personal/sunscreen_lotion_1.png",
-      "assets/images/personal/sunscreen_lotion_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ]
   },
   {
@@ -1621,8 +1621,8 @@ const products = [
     },
     "bannerPath": "assets/images/personal/bp_monitor.png",
     "images": [
-      "assets/images/personal/bp_monitor_1.png",
-      "assets/images/personal/bp_monitor_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ]
   },
   {
@@ -1646,8 +1646,8 @@ const products = [
     },
     "bannerPath": "assets/images/personal/omega3_capsules.png",
     "images": [
-      "assets/images/personal/omega3_capsules_1.png",
-      "assets/images/personal/omega3_capsules_2.png"
+      "assets/images/shirt1.png",
+      "assets/images/shirt1.png"
     ]
   }
 ];

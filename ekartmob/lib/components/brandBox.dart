@@ -13,7 +13,7 @@ class Brandbox extends StatelessWidget {
         padding: const EdgeInsets.all(2.0),
         child: GestureDetector(
           onTap: () {
-            print('pressed');
+            print(brandName);
           },
           child: Container(
             decoration: BoxDecoration(
@@ -21,7 +21,7 @@ class Brandbox extends StatelessWidget {
               color: Colors.white,
             ),
             height: 165,
-            width: 115,
+            width: 98,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,

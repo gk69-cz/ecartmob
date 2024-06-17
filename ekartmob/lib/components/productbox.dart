@@ -26,7 +26,7 @@ class Productbox extends StatelessWidget {
     return GestureDetector(
       onTap: (){
         print(productId);
-        if( productId?.length != 0){
+        if( productId.isNotEmpty){
             Navigator.push(
                           context,
                           MaterialPageRoute(

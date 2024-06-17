@@ -2,7 +2,6 @@ import 'package:ekartmob/components/Footer.dart';
 import 'package:ekartmob/components/imageBox.dart';
 import 'package:ekartmob/components/reviewstar.dart';
 import 'package:ekartmob/components/specifications.dart';
-import 'package:ekartmob/components/subcategory%20Elements/blockButton.dart';
 import 'package:ekartmob/models/products.dart';
 import 'package:ekartmob/models/subCategorymodel.dart';
 import 'package:flutter/material.dart';
@@ -10,7 +9,7 @@ import 'package:flutter/material.dart';
 class individualProduct extends StatelessWidget {
   final String productIdValue;
 
-  individualProduct({super.key, required this.productIdValue});
+  const individualProduct({super.key, required this.productIdValue});
 
   @override
   Widget build(BuildContext context) {
@@ -82,7 +81,7 @@ class individualProduct extends StatelessWidget {
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         //cost and icon
@@ -92,7 +91,7 @@ class individualProduct extends StatelessWidget {
                             //name of the product
                             Text(
                               product['productName'].toString(),
-                              style: TextStyle(
+                              style: const TextStyle(
                                   fontSize: 20, fontWeight: FontWeight.w600),
                             ),
 
@@ -100,29 +99,27 @@ class individualProduct extends StatelessWidget {
                                 onPressed: () {
                                   print("fav");
                                 },
-                                icon: Icon(Icons.favorite_outline_sharp))
+                                icon: const Icon(Icons.favorite_outline_sharp))
                           ],
                         ),
 
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Row(
                           children: [
                             Reviewstar(reviewstar: product['rating'] as double),
-                            SizedBox(
+                            const SizedBox(
                               width: 10,
                             ),
                             Text(product['rating'].toString()),
-                            SizedBox(
+                            const SizedBox(
                               width: 20,
                             ),
-                            Text("|  " +
-                                product['reviewsCount'].toString() +
-                                " Reviews")
+                            Text("|  ${product['reviewsCount']} Reviews")
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         //margin
@@ -130,10 +127,10 @@ class individualProduct extends StatelessWidget {
                           thickness: 1.0,
                           color: Colors.grey.shade200,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
-                        Text(
+                        const Text(
                           'Description',
                           style: TextStyle(
                             fontSize: 20,
@@ -142,25 +139,17 @@ class individualProduct extends StatelessWidget {
                         ),
                         //description
                         Text(
-                          product['description'].toString() +
-                              "  " +
-                              product['description'].toString() +
-                              "  " +
-                              product['description'].toString() +
-                              "  " +
-                              product['description'].toString() +
-                              "  " +
-                              product['description'].toString(),
+                          "${product['description']}  ${product['description']}  ${product['description']}  ${product['description']}  ${product['description']}",
                           style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.normal,
                               color: Colors.grey.shade500),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
 
-                        Text(
+                        const Text(
                           'Specifications',
                           style: TextStyle(
                             fontSize: 20,
@@ -173,12 +162,12 @@ class individualProduct extends StatelessWidget {
                           children: features
                               .map((feature) => Text(
                                     feature,
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                         fontSize: 19, color: Colors.black38),
                                   ))
                               .toList(),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
 
@@ -188,7 +177,7 @@ class individualProduct extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Container(

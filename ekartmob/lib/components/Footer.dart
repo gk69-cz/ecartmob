@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class Footer extends StatelessWidget {
   final String Cost;
@@ -11,7 +10,7 @@ class Footer extends StatelessWidget {
       padding: const EdgeInsets.only(left:28.0),
       child: Container(
         width: 100,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: Colors.transparent,
         ),
         child: Row(
@@ -25,13 +24,13 @@ class Footer extends StatelessWidget {
                   color: Colors.transparent,
                  borderRadius: BorderRadius.all(Radius.elliptical(20, 20)),
              ), 
-                 child: Text(Cost+" Rs",style: TextStyle(fontWeight: FontWeight.w600,fontSize: 20),),
+                 child: Text("$Cost Rs",style: const TextStyle(fontWeight: FontWeight.w600,fontSize: 20),),
                 )
           
             ),
             TextButton(onPressed: (){},
              child: Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 borderRadius: BorderRadius.all(
           Radius.elliptical(19.0,19.0) //               
       ),
@@ -40,7 +39,7 @@ class Footer extends StatelessWidget {
               height: 50,
               width:220,
               
-              child: Center(child: Text('Add To Bag' ,style: TextStyle(color: Colors.white,fontSize: 14),)),
+              child: const Center(child: Text('Add To Bag' ,style: TextStyle(color: Colors.white,fontSize: 14),)),
               ))
         
           

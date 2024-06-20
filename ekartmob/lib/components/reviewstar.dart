@@ -15,7 +15,7 @@ class Reviewstar extends StatelessWidget {
               : index + 0.5 == reviewstar
                   ? Icons.star_half
                   : Icons.star_border,
-          color: index + 0.5 < reviewstar ? Colors.yellow : Colors.grey,
+          color: index + 0.5 < reviewstar ? Colors.yellow : Colors.yellow,
         );
       }),);
   }

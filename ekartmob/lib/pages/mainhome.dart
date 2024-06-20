@@ -19,7 +19,7 @@ class _MainhomeState extends State<Mainhome> {
   List<Widget> widgetList = [
     const Home(),
     const categories(),
-    const Search(),
+     const Search(),
     Profile(),
  
   ];
@@ -92,7 +92,7 @@ class _MainhomeState extends State<Mainhome> {
                   } else if (index == 1) {
                     appBar = 'Shop';
                   } else if (index == 2) {
-                    appBar = 'Search';
+                    appBar = 'Products';
                   } else if (index == 3) {
                     appBar = 'Profile';
                   }
@@ -105,8 +105,8 @@ class _MainhomeState extends State<Mainhome> {
                     icon: Icon(Icons.production_quantity_limits_sharp),
                     label: 'Categories'),
                 BottomNavigationBarItem(
-                    icon: Icon(Icons.search),
-                    label: 'Search'),
+                    icon: Icon(Icons.inventory_2_outlined),
+                    label: 'Products'),
                 BottomNavigationBarItem(
                     icon: Icon(Icons.person_2_outlined), label: 'Profile'),
               ],

@@ -21,7 +21,7 @@ final List<String> categorySelected = (categoryList[int] as Map<dynamic, dynamic
         .toList();
 
 List value = categorySelected[0].split(': ');
-print(value[1]);
+
 
 
 
@@ -29,7 +29,7 @@ List<Widget> ProductWidgets = products.where((product) {
  
       return product['category'] == value[1];
     }).map((product) {
-      print(product);
+
       return Container(
         padding: const EdgeInsets.all(10.0),
         child: Productbox(

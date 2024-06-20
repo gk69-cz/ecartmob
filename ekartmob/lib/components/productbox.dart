@@ -22,11 +22,9 @@ class Productbox extends StatelessWidget {
  
   @override
   Widget build(BuildContext context) {
-    print('testedddd');
     return GestureDetector(
       onTap: (){
-        print(productId);
-        if( productId.isNotEmpty){
+        if( productId.isNotEmpty || productId.isNotEmpty !=null){
             Navigator.push(
                           context,
                           MaterialPageRoute(

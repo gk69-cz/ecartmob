@@ -7,15 +7,13 @@ import 'package:flutter/material.dart';
 class Search extends StatelessWidget {
   const Search({super.key});
 
-
-  
-
   @override
   Widget build(BuildContext context) {
-      List<Widget> ProductWidgets = products.where((product) {
+    List<Widget> ProductWidgets = products.where((product) {
       return product['category'] == 'Home';
     }).map((product) {
       return Container(
+        height:100,
         padding: EdgeInsets.all(10.0),
         child: Productbox(
           productName: product['productName'].toString(),
@@ -27,7 +25,7 @@ class Search extends StatelessWidget {
         ),
       );
     }).toList();
-  
+
     TextEditingController searchvalue = TextEditingController();
     return Scaffold(
       body: ListView(
@@ -38,14 +36,18 @@ class Search extends StatelessWidget {
             children: [
               SizedBox(
                 width: 330,
-                 child: text_Field(controller: searchvalue, hintText: '', obscureText: false,),
+                child: text_Field(
+                  controller: searchvalue,
+                  hintText: '',
+                  obscureText: false,
+                ),
               ),
               IconButton(
                   onPressed: () {
                     showModalBottomSheet<void>(
                       context: context,
                       builder: (BuildContext context) {
-                     return Filterscreen();
+                        return Filterscreen();
                       },
                     );
                   },
@@ -56,28 +58,30 @@ class Search extends StatelessWidget {
             ],
           ),
           SizedBox(height: 20,),
-          const Text('Top Products',style: TextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.w600
-          ),
-          ),
-           Padding(
-            padding: const EdgeInsets.only(top: 6.0),
-            child: SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: SizedBox(
-                height: 280,
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: ProductWidgets,
-                  ),
-                ),
-              ),
+          const Text(
+            'Top Products',
+            style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.w600,
             ),
           ),
-          
+          Padding(
+            padding: const EdgeInsets.all(2.0),
+            child: GridView.builder(
+              shrinkWrap: true,
+              physics: BouncingScrollPhysics(),
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+                crossAxisSpacing: 0.0,
+                mainAxisSpacing: 10.0,
+                childAspectRatio: 0.75,
+              ),
+              itemCount: ProductWidgets.length,
+              itemBuilder: (context, index) {
+                return ProductWidgets[index];
+              },
+            ),
+          ),
         ],
       ),
     );

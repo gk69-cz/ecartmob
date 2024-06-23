@@ -46,7 +46,7 @@ class Productbox extends StatelessWidget {
               height: 3,
             ),
             const Image(
-                height: 150,
+                height: 148,
                 width: 170,
                 fit: BoxFit.cover,
                 image: AssetImage('assets/images/shirt1.png')),

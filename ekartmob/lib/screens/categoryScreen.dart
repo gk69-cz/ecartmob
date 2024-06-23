@@ -56,8 +56,6 @@ class _CategoryscreenState extends State<Categoryscreen> {
       );
     }).toList();
 
-    
-
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(

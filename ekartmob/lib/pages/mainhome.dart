@@ -25,96 +25,109 @@ class _MainhomeState extends State<Mainhome> {
   ];
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-        child: Scaffold(
-            appBar: AppBar(
-              backgroundColor: Colors.white,
-              toolbarHeight: 60,
-              centerTitle: myIndex != 0 ? false:true,
-              title: Text(appBar),
-              actions: [
-                Padding(
-                  padding: const EdgeInsets.all(0.0),
-                  child: Badge(
-                    label: const Text(
-                      '1',
-                      style: TextStyle(fontSize: 10),
-                    ),
-                    child: IconButton(
-                      icon: const Icon(
-                        Icons.shopping_bag_outlined,
-                        size: 30,
-                      ),
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const Emptycart()),
-                        );
-                      },
-                     color: Colors.grey.shade900,
-                    ),
-                  ),
+    return Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.yellow.shade800,
+          toolbarHeight: 60,
+          centerTitle: myIndex != 0 ? false:true,
+          title: Text(appBar),
+          actions: [
+            Padding(
+              padding: const EdgeInsets.all(0.0),
+              child: Badge(
+                label: const Text(
+                  '1',
+                  style: TextStyle(fontSize: 10),
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Badge(
-                    label: const Text('1'),
-                    child: IconButton(
-                      icon: const Icon(
-                        Icons.shopping_bag_outlined,
-                        size: 30,
-                      ),
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const Emptywishlist()),
-                        );
-                      },
-                      color: Colors.grey.shade900,
-                    ),
+                child: IconButton(
+                  icon: const Icon(
+                    Icons.shopping_bag_outlined,
+                      color: Colors.black,
+                    size: 30,
                   ),
-                )
-              ],
-              shape: const RoundedRectangleBorder(
-                  borderRadius: BorderRadius.only(
-                      bottomLeft: Radius.circular(15),
-                      bottomRight: Radius.circular(15))),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const Emptycart()),
+                    );
+                  },
+                 color: Colors.white70,
+                ),
+              ),
             ),
-            bottomNavigationBar: BottomNavigationBar(
-              type: BottomNavigationBarType.fixed,
-              onTap: (index) {
-                setState(() {
-                  myIndex = index;
-                  if (index == 0) {
-                    appBar = 'EasyCart';
-                  } else if (index == 1) {
-                    appBar = 'Shop';
-                  } else if (index == 2) {
-                    appBar = 'Products';
-                  } else if (index == 3) {
-                    appBar = 'Profile';
-                  }
-                });
-              },
-              currentIndex: myIndex,
-              items: const [
-                BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-                BottomNavigationBarItem(
-                    icon: Icon(Icons.production_quantity_limits_sharp),
-                    label: 'Categories'),
-                BottomNavigationBarItem(
-                    icon: Icon(Icons.inventory_2_outlined),
-                    label: 'Products'),
-                BottomNavigationBarItem(
-                    icon: Icon(Icons.person_2_outlined), label: 'Profile'),
-              ],
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Badge(
+                label: const Text('1'),
+                child: IconButton(
+                  icon: const Icon(
+                    Icons.shopping_bag_outlined,
+                    color: Colors.black,
+                    size: 30,
+                  ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const Emptywishlist()),
+                    );
+                  },
+                 
+                ),
+              ),
+            )
+          ],
+          // shape: const RoundedRectangleBorder(
+          //     borderRadius: BorderRadius.only(
+          //         bottomLeft: Radius.circular(15),
+          //         bottomRight: Radius.circular(15))),
+        ),
+        bottomNavigationBar: 
+        
+        BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
+          backgroundColor: Colors.yellow.shade800,
+          fixedColor: Colors.white,
+          onTap: (index) {
+            setState(() {
+              myIndex = index;
+              if (index == 0) {
+                appBar = 'EasyCart';
+              } else if (index == 1) {
+                appBar = 'Shop';
+              } else if (index == 2) {
+                appBar = 'Products';
+              } else if (index == 3) {
+                appBar = 'Profile';
+              }
+            });
+          },
+          currentIndex: myIndex,
+          items: const [
+    
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.production_quantity_limits_sharp),
+                label: 'Categories'),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.inventory_2_outlined),
+                label: 'Products',),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.person_2_outlined), label: 'Profile'),
+          ],
+        ),
+        backgroundColor: Colors.white12,
+        body: Padding(
+          
+          padding: const EdgeInsets.only(top: 0.0),
+          child: Center(child: Container(
+            decoration: BoxDecoration(
+              color: Colors.white70
             ),
-            backgroundColor: Colors.grey.shade100,
-            body: Padding(
-              padding: const EdgeInsets.only(top: 8.0),
-              child: Center(child: widgetList[myIndex]),
-            )));
+          
+           child:  widgetList[myIndex],
+          )),
+        ));
   }
 }

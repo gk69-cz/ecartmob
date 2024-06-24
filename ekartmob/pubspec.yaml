@@ -78,6 +78,21 @@ flutter:
     - assets/images/lg.png
     - assets/images/addidas.jpg
 
+    - assets/images/colombia.png
+    - assets/images/h&m.png
+    - assets/images/levis.png
+    - assets/images/puma.png
+    - assets/images/under.png
+    - assets/images/rebok.png
+
+    - assets/categoryImages/electronics.png
+    - assets/categoryImages/fashion.png
+    - assets/categoryImages/home.png
+    - assets/categoryImages/health.png
+    - assets/categoryImages/sports.png
+    - assets/categoryImages/games.png
+    
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

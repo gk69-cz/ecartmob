@@ -67,16 +67,17 @@ class individualProduct extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(toolbarHeight: 60, centerTitle: true, actions: [
+      appBar: AppBar(toolbarHeight: 60,backgroundColor: Colors.yellow.shade800, centerTitle: true, actions: [
         Padding(
           padding: const EdgeInsets.all(10.0),
           child: IconButton(
             icon: const Icon(
               Icons.share_outlined,
+              color: Colors.white70,
               size: 30,
             ),
             onPressed: () {},
-            color: Colors.grey.shade900,
+             color: Colors.white70,
           ),
         ),
       ]),
@@ -118,7 +119,7 @@ class individualProduct extends StatelessWidget {
           
                           IconButton(
                               onPressed: () {
-                                print("fav");
+                              
                               },
                               icon: const Icon(Icons.favorite_outline_sharp))
                         ],

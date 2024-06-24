@@ -13,7 +13,7 @@ class categories extends StatelessWidget {
         padding: const EdgeInsets.all(0.0), // Add padding for spacing
         child: Categorybox(
           CategoryName: category['categoryName'].toString(),
-          iconValue: getIconFromString(category['icon'].toString()),
+          categoryImageUrl: category['categoryImageUrl'].toString(),
           bannerPath: category['BannerPath'].toString(),
           location: 'Categories',
         ),

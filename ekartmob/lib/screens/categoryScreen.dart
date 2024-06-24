@@ -61,6 +61,8 @@ class _CategoryscreenState extends State<Categoryscreen> {
       appBar: AppBar(
           toolbarHeight: 60,
           centerTitle: true,
+          backgroundColor: Colors.yellow.shade800,
+          shadowColor:Colors.yellow.shade600 ,
           title: Text(widget.categoryName),
           actions: [
             Padding(
@@ -75,137 +77,140 @@ class _CategoryscreenState extends State<Categoryscreen> {
                        _isSearchBarVisible = !_isSearchBarVisible;
                     });
                 },
-                color: Colors.grey.shade900,
+                color: Colors.white70,
               ),
             ),
           ]),
-      body: ListView(
-        children: [
-        //  Searchfilter(controller: search , category: widget.categoryName,),
-       
-
-          Container(
-            height: 200,
-            width: 380,
-            decoration: BoxDecoration(
-                borderRadius: const BorderRadius.all(Radius.elliptical(13, 15)),
-                image: DecorationImage(
-                    fit: BoxFit.fitWidth, image: AssetImage(widget.bannerPath))),
-          ),
-          const Padding(
-            padding: EdgeInsets.only(left: 18.0, right: 10.0, top: 10.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  'Top brands ',
-                  style: TextStyle(
-                      fontSize: 17,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black),
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                Text(
-                  'See More',
-                  style: TextStyle(
-                    fontSize: 13,
-                    color: Colors.black,
+      body: Padding(
+        padding: const EdgeInsets.only(top:4.0),
+        child: ListView(
+          children: [
+          //  Searchfilter(controller: search , category: widget.categoryName,),
+         
+        
+            Container(
+              height: 200,
+              width: 380,
+              decoration: BoxDecoration(
+                  borderRadius: const BorderRadius.all(Radius.elliptical(13, 15)),
+                  image: DecorationImage(
+                      fit: BoxFit.fitWidth, image: AssetImage(widget.bannerPath))),
+            ),
+            const Padding(
+              padding: EdgeInsets.only(left: 18.0, right: 10.0, top: 10.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    'Top brands ',
+                    style: TextStyle(
+                        fontSize: 17,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    'See More',
+                    style: TextStyle(
+                      fontSize: 13,
+                      color: Colors.black,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(
+              height: 2,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 0.0),
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Container(
+                  height: 160,
+                  color: Colors.white,
+                  child: Padding(
+                    padding: const EdgeInsets.only(right: 10.0),
+                    child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: brandWidgets),
                   ),
                 ),
-              ],
+              ),
             ),
-          ),
-          const SizedBox(
-            height: 2,
-          ),
-          Padding(
-            padding: const EdgeInsets.only(top: 0.0),
-            child: SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Container(
-                height: 160,
-                color: Colors.white,
-                child: Padding(
-                  padding: const EdgeInsets.only(right: 10.0),
-                  child: Row(
+            const Padding(
+              padding: EdgeInsets.only(left: 10.0, right: 10),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    'Just In',
+                    style: TextStyle(
+                        fontSize: 17,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black),
+                  ),
+                  Text(
+                    'See More',
+                    style: TextStyle(
+                      fontSize: 13,
+                      color: Colors.grey,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 6.0),
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: SizedBox(
+                  height: 280,
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: brandWidgets),
-                ),
-              ),
-            ),
-          ),
-          const Padding(
-            padding: EdgeInsets.only(left: 10.0, right: 10),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  'Just In',
-                  style: TextStyle(
-                      fontSize: 17,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black),
-                ),
-                Text(
-                  'See More',
-                  style: TextStyle(
-                    fontSize: 13,
-                    color: Colors.grey,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(top: 6.0),
-            child: SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: SizedBox(
-                height: 280,
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: ProductWidgets,
+                      children: ProductWidgets,
+                    ),
                   ),
                 ),
               ),
             ),
-          ),
-          const Padding(
-            padding: EdgeInsets.only(left: 10.0, right: 10),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  'Recomended for you',
-                  style: TextStyle(
-                      fontSize: 17,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black),
-                ),
-              ],
+            const Padding(
+              padding: EdgeInsets.only(left: 10.0, right: 10),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    'Recomended for you',
+                    style: TextStyle(
+                        fontSize: 17,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black),
+                  ),
+                ],
+              ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(top: 6.0),
-            child: SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: SizedBox(
-                height: 280,
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: ProductWidgets,
+            Padding(
+              padding: const EdgeInsets.only(top: 6.0),
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: SizedBox(
+                  height: 280,
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: ProductWidgets,
+                    ),
                   ),
                 ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

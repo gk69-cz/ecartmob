@@ -1,37 +1,37 @@
 const categoriesList = [
   {
     "categoryName": "Electronics",
-    "icon": "Icons.electrical_services_outlined",
+    "categoryImageUrl": "assets/categoryImages/electronics.png",
     "BannerPath": "assets/images/electronics.jpg",
     "itemCount": 4
   },
   {
     "categoryName": "Fashion",
-    "icon": "Icons.checkroom_outlined",
+    "categoryImageUrl": "assets/categoryImages/fashion.png",
     "BannerPath": "assets/images/fashion.jpg",
     "itemCount": 4
   },
   {
     "categoryName": "Home",
-    "icon": "Icons.home_outlined",
+    "categoryImageUrl": "assets/categoryImages/home.png",
     "BannerPath": "assets/images/home.jpg",
     "itemCount": 4
   },
   {
     "categoryName": "Sports",
-    "icon": "Icons.sports_soccer_outlined",
+    "categoryImageUrl": "assets/categoryImages/sports.png",
     "BannerPath": "assets/images/sports.jpg",
     "itemCount": 4
   },
   {
     "categoryName": "Games",
-    "icon": "Icons.toys_outlined",
+    "categoryImageUrl": "assets/categoryImages/games.png",
     "BannerPath": "assets/images/games.jpg",
     "itemCount": 4
   },
   {
     "categoryName": "Health",
-    "icon": "Icons.local_hospital_outlined",
+    "categoryImageUrl": "assets/categoryImages/health.png",
     "BannerPath": "assets/images/health.jpg",
     "itemCount": 4
   }

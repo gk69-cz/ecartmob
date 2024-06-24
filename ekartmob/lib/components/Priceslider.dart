@@ -42,6 +42,7 @@ class _TwoWaySliderState extends State<TwoWaySlider> {
             overlayShape: const RoundSliderOverlayShape(overlayRadius: 20.0),
           ),
           child: RangeSlider(
+            activeColor: Colors.yellow.shade800,
             values: RangeValues(_lowerValue, _upperValue),
             min: widget.min,
             max: widget.max,

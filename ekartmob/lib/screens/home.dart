@@ -22,9 +22,6 @@ final List<String> categorySelected = (categoryList[int] as Map<dynamic, dynamic
 
 List value = categorySelected[0].split(': ');
 
-
-
-
 List<Widget> ProductWidgets = products.where((product) {
  
       return product['category'] == value[1];
@@ -49,7 +46,7 @@ List<Widget> ProductWidgets = products.where((product) {
         padding: const EdgeInsets.all(0.0), // Add padding for spacing
         child: Categorybox(
           CategoryName: category['categoryName'].toString(),
-          iconValue: getIconFromString(category['icon'].toString()),
+          categoryImageUrl: category['categoryImageUrl'].toString(),
           bannerPath: category['BannerPath'].toString(),
           location: 'Home',
         ),
@@ -76,14 +73,13 @@ List<Widget> ProductWidgets = products.where((product) {
                       Container(
                         width: 390,
                         height: 110,
-                        color: Colors.white,
                         child: Padding(
-                          padding: const EdgeInsets.only(right: 8.0),
+                          padding: const EdgeInsets.only(left:8.0,right: 8.0),
                           child: SingleChildScrollView(
                             scrollDirection: Axis.horizontal,
                             child: Container(
                               height: 160,
-                              color: Colors.white,
+                              color: Colors.transparent,
                               child: Padding(
                                 padding:
                                     const EdgeInsets.only(top: 10.0, left: 9.0),

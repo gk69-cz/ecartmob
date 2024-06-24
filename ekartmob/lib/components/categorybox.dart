@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 
 class Categorybox extends StatelessWidget {
   final String CategoryName;
-  final Icon iconValue;
+  final String categoryImageUrl;
   final String bannerPath;
   final String location;
 
   const Categorybox({
     super.key,
     required this.CategoryName,
-    required this.iconValue,
+    required this.categoryImageUrl,
     required this.bannerPath,
     required this.location,
   });
@@ -37,7 +37,7 @@ class Categorybox extends StatelessWidget {
                   ? Border.all(color: const Color.fromARGB(32, 0, 0, 0))
                   : Border.all(color: Colors.transparent),
               borderRadius: BorderRadius.circular(15.0),
-              color: Colors.white,
+              color: Color.fromARGB(10, 0, 0, 0),
             ),
             height: 195,
             width: 115,
@@ -59,11 +59,20 @@ class Categorybox extends StatelessWidget {
                               borderRadius: BorderRadius.circular(15.0),
                               color: Colors.grey.shade50,
                             ),
-                            height: 50,
-                            width: 50,
-                            child: iconValue),
+                            height: 60,
+                            width: 60,
+                            child: Container(
+                            decoration: BoxDecoration(
+                                borderRadius: const BorderRadius.all(
+                                    Radius.elliptical(13, 15)),
+                                image: DecorationImage(
+                                    fit: BoxFit.cover,
+                                    image: AssetImage(categoryImageUrl))),
+                          ),
+                            
+                            ),
                         const SizedBox(
-                          height: 9,
+                          height: 2,
                         ),
                         Text(CategoryName),
                       ]),

@@ -31,7 +31,7 @@ class Productbox extends StatelessWidget {
                               builder: (context) =>  individualProduct(productIdValue: productId)),
                         );
         }else {
-          print('no');
+         
         }
       },
       child: Container(

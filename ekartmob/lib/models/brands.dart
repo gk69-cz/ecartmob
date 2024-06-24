@@ -81,7 +81,7 @@ const brandList = [
       "Games": false,
       "Health": false
     },
-    "imageUrl": "assets/images/lg.png"
+    "imageUrl": "assets/images/under.png"
   },
   {
     "name": "Puma",
@@ -93,7 +93,7 @@ const brandList = [
       "Games": false,
       "Health": false
     },
-    "imageUrl": "assets/images/lg.png"
+    "imageUrl": "assets/images/puma.png"
   },
   {
     "name": "Philips",
@@ -129,7 +129,7 @@ const brandList = [
       "Games": false,
       "Health": false
     },
-    "imageUrl": "assets/images/nike.png"
+    "imageUrl": "assets/images/levis.png"
   },
   {
     "name": "H&M",
@@ -141,7 +141,7 @@ const brandList = [
       "Games": false,
       "Health": false
     },
-    "imageUrl": "assets/images/nike.png"
+    "imageUrl": "assets/images/h&m.png"
   },
   {
     "name": "Columbia",
@@ -153,19 +153,7 @@ const brandList = [
       "Games": false,
       "Health": false
     },
-    "imageUrl": "assets/images/lg.png"
-  },
-  {
-    "name": "Patagonia",
-    "categories": {
-      "Fashion": true,
-      "Sports": true,
-      "Electronics": false,
-      "Home": false,
-      "Games": false,
-      "Health": false
-    },
-    "imageUrl": "assets/images/nike.png"
+    "imageUrl": "assets/images/colombia.png"
   },
   {
     "name": "Reebok",
@@ -177,7 +165,7 @@ const brandList = [
       "Games": false,
       "Health": false
     },
-    "imageUrl": "assets/images/nike.png"
+    "imageUrl": "assets/images/rebok.png"
   },
   {
     "name": "Fisher-Price",

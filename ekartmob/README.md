@@ -26,3 +26,16 @@ Photo by Max Vakhtbovycn: https://www.pexels.com/photo/washroom-interior-with-ca
 Photo by Designecologist: https://www.pexels.com/photo/photo-of-plants-on-the-table-1005058/ - home
 Photo by Pixabay: https://www.pexels.com/photo/dices-and-wooden-pieces-on-game-board-278918/ - games
 Photo by Nataliya Vaitkevich: https://www.pexels.com/photo/woman-on-sofa-holding-shopping-bags-6214138/ -banner
+
+Photo by Pixabay: https://www.pexels.com/photo/tennis-ball-on-tennis-racket-on-floor-209977/
+Photo by Pixabay: https://www.pexels.com/photo/white-gaming-console-on-wooden-surface-275033/
+Photo by Jadson Thomas: https://www.pexels.com/photo/3-by-3-rubik-s-cube-selective-focus-photography-1500610/
+Photo by Ylanite Koppens: https://www.pexels.com/photo/three-beige-yellow-and-pink-heart-marshmallows-612825/
+Photo by Karolina Grabowska: https://www.pexels.com/photo/geometric-decoration-5836/
+Photo by Andreea Ch: https://www.pexels.com/photo/two-clear-drinking-glasses-on-table-1166646/
+Photo by SHVETS production: https://www.pexels.com/photo/sticky-notes-and-binder-clips-9743098/
+
+
+## Functionality Used
+
+# 

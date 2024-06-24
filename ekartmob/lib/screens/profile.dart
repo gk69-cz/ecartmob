@@ -11,8 +11,11 @@ class Profile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Center(
+      
         child: Column(
+          
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text(
@@ -40,6 +43,27 @@ class Profile extends StatelessWidget {
               obscureText: false,
               controller: _address,
             ),
+            SizedBox(height: 10,),
+            Center(
+              child: TextButton(
+                onPressed: (){},
+             child: Container(
+              height: 50,
+              width:200,
+              decoration: BoxDecoration(
+                  border: Border.all(color: Colors.yellow.shade500),
+              borderRadius: const BorderRadius.all(Radius.elliptical(12, 19)),
+             color: Colors.yellow.shade800,
+              ),
+              child: const Center(
+                child: Text('Update Profile',style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.white,
+                ),),
+              ),
+              
+             )))
           ],
         ),
       ),

@@ -122,7 +122,7 @@ class _MainhomeState extends State<Mainhome> {
           
           padding: const EdgeInsets.only(top: 0.0),
           child: Center(child: Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.white70
             ),
           

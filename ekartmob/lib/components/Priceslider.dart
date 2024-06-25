@@ -85,7 +85,7 @@ class RangeSliderExample extends StatelessWidget {
           lowerValue: 20,
           upperValue: 80,
           onChanged: (RangeValues values) {
-            print('Selected range: ${values.start} - ${values.end}');
+          
           },
         ),
       ),

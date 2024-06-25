@@ -37,7 +37,7 @@ class Categorybox extends StatelessWidget {
                   ? Border.all(color: const Color.fromARGB(32, 0, 0, 0))
                   : Border.all(color: Colors.transparent),
               borderRadius: BorderRadius.circular(15.0),
-              color: Color.fromARGB(10, 0, 0, 0),
+              color: const Color.fromARGB(10, 0, 0, 0),
             ),
             height: 195,
             width: 115,

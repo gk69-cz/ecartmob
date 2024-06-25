@@ -38,7 +38,7 @@ class Brandbox extends StatelessWidget {
                         Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(15.0),
-                            color: Color.fromARGB(36, 165, 165, 165),
+                            color: const Color.fromARGB(36, 165, 165, 165),
                           ),
                           height: 80,
                           width: 80,

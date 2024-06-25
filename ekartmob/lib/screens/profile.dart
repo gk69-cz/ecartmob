@@ -43,7 +43,7 @@ class Profile extends StatelessWidget {
               obscureText: false,
               controller: _address,
             ),
-            SizedBox(height: 10,),
+            const SizedBox(height: 10,),
             Center(
               child: TextButton(
                 onPressed: (){},

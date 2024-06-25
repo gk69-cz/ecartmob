@@ -38,7 +38,7 @@ class _SearchState extends State<Search> {
     }).map((product) {
       return Container(
         height: 100,
-        padding: EdgeInsets.all(10.0),
+        padding: const EdgeInsets.all(10.0),
         child: Productbox(
           productName: product['productName'].toString(),
           description: product['description'].toString(),
@@ -55,7 +55,7 @@ class _SearchState extends State<Search> {
     }).map((product) {
       return Container(
         height: 100,
-        padding: EdgeInsets.all(10.0),
+        padding: const EdgeInsets.all(10.0),
         child: Productbox(
           productName: product['productName'].toString(),
           description: product['description'].toString(),
@@ -85,7 +85,7 @@ class _SearchState extends State<Search> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
+                const Text(
                   'Search ',
                   style: TextStyle(fontSize: 21),
                 ),
@@ -104,7 +104,7 @@ class _SearchState extends State<Search> {
                       showModalBottomSheet<void>(
                         context: context,
                         builder: (BuildContext context) {
-                          return Filterscreen();
+                          return const Filterscreen();
                         },
                       );
                     },
@@ -114,28 +114,28 @@ class _SearchState extends State<Search> {
                     ))
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 6,
             ),
             (searched && searched == true)
                 ? Center(
                     child: Text(
-                    "Search results for ' "+searchFieldvalue+" '",
-                    style: TextStyle(fontWeight: FontWeight.w700),
+                    "Search results for ' $searchFieldvalue '",
+                    style: const TextStyle(fontWeight: FontWeight.w700),
                   ))
-                : Center(
+                : const Center(
                     child: Text("Search or Filter products",
                         style: TextStyle(fontWeight: FontWeight.w700)),
                   ),
-            SizedBox(
+            const SizedBox(
               height: 1,
             ),
             Padding(
               padding: const EdgeInsets.all(2.0),
               child: GridView.builder(
                 shrinkWrap: true,
-                physics: BouncingScrollPhysics(),
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                physics: const BouncingScrollPhysics(),
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
                   crossAxisSpacing: 0.0,
                   mainAxisSpacing: 10.0,

@@ -2,7 +2,6 @@ import 'dart:math';
 
 import 'package:ekartmob/components/categorybox.dart';
 import 'package:ekartmob/components/productbox.dart';
-import 'package:ekartmob/helpers/iconhelpers.dart';
 import 'package:ekartmob/models/categories.dart';
 import 'package:ekartmob/models/products.dart';
 import 'package:flutter/material.dart';
@@ -70,7 +69,7 @@ List<Widget> ProductWidgets = products.where((product) {
                   padding: const EdgeInsets.only(top: 0.0),
                   child: Row(
                     children: [
-                      Container(
+                      SizedBox(
                         width: 390,
                         height: 110,
                         child: Padding(

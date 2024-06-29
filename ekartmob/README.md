@@ -1,5 +1,3 @@
-![search result](https://github.com/gk69-cz/ecartmob/assets/69849029/1c18ad7c-9d8d-4b28-be59-dc406cab0906)# ekartmob
-
 A new Flutter project.
 
 ## Getting Started

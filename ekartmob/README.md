@@ -39,16 +39,16 @@ Photo by Karolina Grabowska: https://www.pexels.com/photo/geometric-decoration-5
 Photo by Andreea Ch: https://www.pexels.com/photo/two-clear-drinking-glasses-on-table-1166646/
 Photo by SHVETS production: https://www.pexels.com/photo/sticky-notes-and-binder-clips-9743098/
 
-# logo inages
+# logo images
 placed in folder .
 add it in the assets folder and declare it in the ymal
 
 
 ## Functionality 
 
-# home
-# product with search and filter
-# category Screen
-# Empty wishlist
-# Empty cart Screen
+home
+product with search and filter
+category Screen
+Empty wishlist
+Empty cart Screen
 

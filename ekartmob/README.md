@@ -1,4 +1,4 @@
-# ekartmob
+![search result](https://github.com/gk69-cz/ecartmob/assets/69849029/1c18ad7c-9d8d-4b28-be59-dc406cab0906)# ekartmob
 
 A new Flutter project.
 
@@ -46,9 +46,38 @@ add it in the assets folder and declare it in the ymal
 
 ## Functionality 
 
-home
-product with search and filter
-category Screen
+home -
+Navigate to selected products 
+scroll through category and select a category
+![home](https://github.com/gk69-cz/ecartmob/assets/69849029/6169fe71-d234-4157-8140-e94db5ed5614)
+
+All products screen 
+search product by name and filter
+![all product](https://github.com/gk69-cz/ecartmob/assets/69849029/1e94997c-395a-4ab1-9905-c5ab1b597fdb)
+![unselected filter](https://github.com/gk69-cz/ecartmob/assets/69849029/9cfdb301-a9e5-4863-9827-fa590e2bb468)
+![filter](https://github.com/gk69-cz/ecartmob/assets/69849029/053a20d5-c8c1-4c47-bb05-89b7dfc557ad)
+
+All category Screen 
+Navigate to any category
+![common category](https://github.com/gk69-cz/ecartmob/assets/69849029/eb39432e-cbe1-484f-bb6f-c3ac997e912f)
+
+Individual category
+List of all items under that category 
+![category](https://github.com/gk69-cz/ecartmob/assets/69849029/d9c9d08e-eaee-407e-8c91-af919af4c7e3)
+
+Individual product
+product details and variants from json 
+![product](https://github.com/gk69-cz/ecartmob/assets/69849029/1c7bcba4-6b33-4345-9b11-1ae5bc2bb720)
+
 Empty wishlist
+![empty wishlist](https://github.com/gk69-cz/ecartmob/assets/69849029/c626a736-1c59-4e49-938b-56b8f9df15d9)
+
 Empty cart Screen
+![empty cart](https://github.com/gk69-cz/ecartmob/assets/69849029/11ec07ef-226b-4ed8-a7d1-84359224e7de)
+
+Profile screen
+![profile](https://github.com/gk69-cz/ecartmob/assets/69849029/b1b604bc-4406-47f1-831c-fb724e3a977f)
+
+
+
 

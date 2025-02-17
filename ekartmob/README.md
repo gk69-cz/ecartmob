@@ -14,7 +14,7 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 ## data sources
-model folder with products and 
+Model folder with products and json
 
 ## images sources
 

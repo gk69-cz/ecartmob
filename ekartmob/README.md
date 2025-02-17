@@ -13,10 +13,10 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-## data sources
+## Data sources
 Model folder with products and json
 
-## images sources
+## Images sources
 
 Photo by Karolina Kaboompics: https://www.pexels.com/photo/black-friday-sign-and-a-gift-box-5632399/
 Photo by Andrea Piacquadio: https://www.pexels.com/photo/woman-in-brown-coat-carrying-two-white-tote-bags-919453/ -category
@@ -37,7 +37,7 @@ Photo by Karolina Grabowska: https://www.pexels.com/photo/geometric-decoration-5
 Photo by Andreea Ch: https://www.pexels.com/photo/two-clear-drinking-glasses-on-table-1166646/
 Photo by SHVETS production: https://www.pexels.com/photo/sticky-notes-and-binder-clips-9743098/
 
-# logo images
+# Logo images
 placed in folder .
 add it in the assets folder and declare it in the ymal
 
